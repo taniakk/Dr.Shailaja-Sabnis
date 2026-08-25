@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Shailaja Sabnis — Consultant Physician &amp; Rheumatologist, Mumbai</title>
+<meta name="description" content="Dr Shailaja Sabnis, MD, Diploma in Rheumatology (Wales, UK) — 27 years treating rheumatoid arthritis, lupus, osteoporosis and autoimmune disease in Mumbai.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- AOS Library CSS & JS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<style>
+  :root{
+    --ivory:#FAF7F1;
+    --parchment:#F1E9DB;
+    --parchment-deep:#E9DDC8;
+    --sage:#6F8D76;
+    --sage-deep:#3F5744;
+    --sage-pale:#DCE6DD;
+    --mauve:#B08497;
+    --mauve-pale:#EFDFE4;
+    --ink:#26302A;
+    --ink-soft:#5B6259;
+    --line:#DDD2BE;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Karla', sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1160px; margin:0 auto; padding:0 32px;}
+  h1,h2,h3,h4{font-family:'Fraunces', serif; font-weight:450; line-height:1.12; color:var(--sage-deep); letter-spacing:-0.01em;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--sage);
+    font-weight:500;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--sage); display:inline-block;}
+  .italic{font-style:italic; font-weight:400; color:var(--mauve);}
+  section{padding:96px 0;}
+  @media(max-width:720px){ section{padding:64px 0;} .wrap{padding:0 22px;} }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,247,241,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{display:flex; align-items:center; justify-content:space-between; padding-top:18px; padding-bottom:18px;}
+  .brand{font-family:'Fraunces', serif; font-size:19px; font-weight:500; color:var(--sage-deep);}
+  .brand span{color:var(--mauve); font-style:italic;}
+  .navlinks{display:flex; gap:34px; font-size:14.5px; font-weight:500;}
+  .navlinks a{position:relative; padding:4px 0; color:var(--ink-soft); transition:color .2s;}
+  .navlinks a:hover{color:var(--sage-deep);}
+  .navlinks a::after{content:""; position:absolute; left:0; bottom:0; width:0; height:1.5px; background:var(--mauve); transition:width .25s;}
+  .navlinks a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--sage-deep); color:var(--ivory); padding:10px 20px; border-radius:100px;
+    font-size:13.5px; font-weight:600; letter-spacing:0.02em; transition:background .2s;
+  }
+  .nav-cta:hover{background:var(--sage);}
+  .navtoggle{display:none;}
+  @media(max-width:860px){
+    .navlinks{display:none;}
+    .navtoggle{display:block; font-family:'IBM Plex Mono'; font-size:13px; border:1px solid var(--line); padding:8px 14px; border-radius:100px;}
+  }
+
+  
+
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:start;}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr;}}
+  .about-grid h2{font-size:clamp(28px,3.4vw,38px); margin-bottom:20px;}
+  .about-grid p{color:var(--ink-soft); margin-bottom:16px; max-width:56ch;}
+  .quote-card{
+    background:var(--parchment); border-radius:22px; padding:34px 30px;
+    border-left:3px solid var(--mauve);
+  }
+  .quote-card p{font-family:'Fraunces', serif; font-style:italic; font-size:20px; color:var(--sage-deep); line-height:1.5;}
+  .quote-card cite{display:block; margin-top:14px; font-family:'IBM Plex Mono', monospace; font-style:normal; font-size:12.5px; color:var(--ink-soft); letter-spacing:.03em;}
+
+
+
+  /* ---------- JOURNEY (spine timeline) ---------- */
+  .journey{background:var(--parchment);}
+  .spine{position:relative; margin-top:20px; padding-left:44px;}
+  .spine::before{content:""; position:absolute; left:9px; top:6px; bottom:6px; width:2px; background:linear-gradient(var(--sage-pale), var(--sage), var(--sage-pale)); border-radius:2px;}
+  .spine-item{position:relative; padding-bottom:44px;}
+  .spine-item:last-child{padding-bottom:0;}
+  .spine-item::before{
+    content:""; position:absolute; left:-44px; top:4px; width:20px; height:20px; border-radius:50%;
+    background:var(--white); border:2.5px solid var(--sage); box-shadow:0 0 0 5px var(--parchment);
+  }
+  .spine-item .yr{font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--sage-deep); font-weight:500; letter-spacing:.05em; text-transform:uppercase;}
+  .spine-item h4{font-size:19px; margin:6px 0 4px; font-weight:500;}
+  .spine-item p{color:var(--ink-soft); font-size:15px; max-width:60ch;}
+
+  /* ---------- AFFILIATIONS ---------- */
+  .affil-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media(max-width:860px){.affil-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.affil-grid{grid-template-columns:1fr;}}
+  .affil-card{border:1px solid var(--line); border-radius:16px; padding:22px 20px; background:var(--white);}
+  .affil-card h5{font-family:'Fraunces', serif; font-weight:500; font-size:16.5px; color:var(--sage-deep); margin-bottom:6px;}
+  .affil-card span{font-size:13px; color:var(--ink-soft); font-family:'IBM Plex Mono', monospace;}
+
+  /* ---------- PUBLICATIONS ---------- */
+  .pub-list{display:flex; flex-direction:column; border-top:1px solid var(--line);}
+  .pub-item{display:grid; grid-template-columns:120px 1fr; gap:24px; padding:22px 0; border-bottom:1px solid var(--line);}
+  @media(max-width:640px){.pub-item{grid-template-columns:1fr; gap:6px;}}
+  .pub-item .py{font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--mauve);}
+  .pub-item h4{font-size:16.5px; font-weight:500; color:var(--ink);}
+  .pub-item p{font-size:14px; color:var(--ink-soft); margin-top:4px;}
+
+  /* ---------- PRESENTATIONS ---------- */
+  .presentations{background:var(--sage-deep); color:var(--ivory);}
+  .presentations .eyebrow{color:var(--mauve-pale);}
+  .presentations h2, .presentations h2 .italic{color:var(--ivory);}
+  .presentations .section-head p{color:#C9D6CB;}
+  .pres-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px 40px;}
+  @media(max-width:760px){.pres-grid{grid-template-columns:1fr;}}
+  .pres-row{display:flex; gap:16px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,.14); align-items:baseline;}
+  .pres-row .py{font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:#B9D2BC; min-width:74px;}
+  .pres-row .pt{font-size:15px; color:#EEF3EC;}
+  .more-wrap{margin-top:34px;}
+  details{border-top:1px solid rgba(255,255,255,.14); padding-top:24px;}
+  summary{cursor:pointer; font-family:'IBM Plex Mono', monospace; font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--mauve-pale); list-style:none; display:flex; align-items:center; gap:10px;}
+  summary::-webkit-details-marker{display:none;}
+  summary::before{content:"+"; font-size:16px; border:1px solid rgba(255,255,255,.4); width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center;}
+  details[open] summary::before{content:"–";}
+  .full-list{margin-top:22px; display:flex; flex-direction:column; gap:0;}
+
+  /* ---------- CTA BANNER ---------- */
+  .cta-band{
+    background:var(--mauve-pale); border-radius:28px; margin:0 auto; max-width:1160px;
+    padding:56px 48px; display:flex; justify-content:space-between; align-items:center; gap:32px; flex-wrap:wrap;
+  }
+  .cta-band h3{font-size:clamp(24px,3vw,32px); max-width:30ch;}
+  .cta-band p{color:var(--ink-soft); margin-top:8px;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
+  @media(max-width:860px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-item{display:flex; gap:16px; padding:20px 0; border-bottom:1px solid var(--line);}
+  .contact-item .ic{width:38px; height:38px; border-radius:50%; background:var(--sage-pale); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--sage-deep); flex-shrink:0;}
+  .contact-item h5{font-size:15px; font-weight:600; margin-bottom:4px;}
+  .contact-item p, .contact-item a{color:var(--ink-soft); font-size:15px;}
+  .map-frame{border-radius:20px; overflow:hidden; border:1px solid var(--line); height:100%; min-height:340px;}
+  .map-frame iframe{width:100%; height:100%; min-height:340px; border:0;}
+
+  footer{border-top:1px solid var(--line); padding:36px 0; text-align:center;}
+  footer p{font-size:13px; color:var(--ink-soft);}
+
+  .fade-in{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .fade-in.visible{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm font-sans">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+    <!-- Brand Logo -->
+    <a href="#" class="flex items-center group">
+      <img src="https://ik.imagekit.io/iuiy6mihw/Dr.ShailajaLogo.png" alt="Dr. Shailaja Sabnis Logo" class="h-16 sm:h-20 md:h-24 w-auto object-contain transition-all duration-200">
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#about" class="text-slate-700 font-medium hover:text-[#1995ad] transition-colors duration-200">About</a>
+      <a href="#expertise" class="text-slate-700 font-medium hover:text-[#1995ad] transition-colors duration-200">Expertise</a>
+      <a href="#journey" class="text-slate-700 font-medium hover:text-[#1995ad] transition-colors duration-200">Journey</a>
+      <a href="#publications" class="text-slate-700 font-medium hover:text-[#1995ad] transition-colors duration-200">Publications</a>
+      <a href="#presentations" class="text-slate-700 font-medium hover:text-[#1995ad] transition-colors duration-200">Talks</a>
+      <a href="#contact" class="text-slate-700 font-medium hover:text-[#1995ad] transition-colors duration-200">Contact</a>
+    </div>
+
+    <!-- Desktop CTA Button -->
+    <a href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener" class="hidden md:inline-flex items-center justify-center bg-[#0d5c75] hover:bg-[#083d4f] text-white font-semibold px-5 py-2.5 rounded-full transition-colors duration-200 shadow-sm hover:shadow">
+      Book a Consultation
+    </a>
+
+    <!-- Mobile Hamburger Button -->
+    <button id="menuToggle" aria-label="Toggle Navigation" class="md:hidden flex flex-col justify-center gap-1.5 p-2 rounded-lg text-[#0d5c75] focus:outline-none">
+      <span class="w-6 h-0.5 bg-[#0d5c75] transition-all"></span>
+      <span class="w-6 h-0.5 bg-[#0d5c75] transition-all"></span>
+      <span class="w-6 h-0.5 bg-[#0d5c75] transition-all"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="navLinks" class="md:hidden hidden flex-col w-full bg-white border-b border-slate-100 shadow-lg px-6 py-4 space-y-4">
+    <a href="#about" class="block text-slate-700 font-medium hover:text-[#1995ad]">About</a>
+    <a href="#expertise" class="block text-slate-700 font-medium hover:text-[#1995ad]">Expertise</a>
+    <a href="#journey" class="block text-slate-700 font-medium hover:text-[#1995ad]">Journey</a>
+    <a href="#publications" class="block text-slate-700 font-medium hover:text-[#1995ad]">Publications</a>
+    <a href="#presentations" class="block text-slate-700 font-medium hover:text-[#1995ad]">Talks</a>
+    <a href="#contact" class="block text-slate-700 font-medium hover:text-[#1995ad]">Contact</a>
+    <a href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener" class="inline-block w-full text-center bg-[#0d5c75] text-white font-semibold py-2.5 rounded-full">
+      Book a Consultation
+    </a>
+  </div>
+
+  <script>
+    (function() {
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      let lastScrollTop = 0;
+
+      // Toggle menu open/close
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+        navLinks.classList.toggle('flex');
+      });
+
+      // Close menu on link click
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.add('hidden');
+          navLinks.classList.remove('flex');
+        });
+      });
+
+      // Auto-close menu when scrolling down on mobile
+      window.addEventListener('scroll', () => {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScroll > lastScrollTop && !navLinks.classList.contains('hidden')) {
+          navLinks.classList.add('hidden');
+          navLinks.classList.remove('flex');
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    })();
+  </script>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-[#0A1D37]/[0.02] to-emerald-50/30 py-16 lg:py-24 font-sans text-slate-800">
+  
+  <!-- Ambient Soft Background Glows -->
+  <div class="absolute -top-32 -left-32 w-[500px] h-[500px] bg-[#003366]/10 rounded-full blur-[140px] pointer-events-none"></div>
+  <div class="absolute top-1/2 right-0 w-[450px] h-[450px] bg-[#1E824C]/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+      
+      <!-- Text Content Column -->
+      <div class="lg:col-span-7 space-y-6" data-aos="fade-right" data-aos-duration="1000">
+        
+        <!-- Eyebrow Tag -->
+        <div class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold tracking-wider text-[#1E824C] uppercase bg-[#1E824C]/10 border border-[#1E824C]/20 px-4 py-1.5 rounded-full backdrop-blur-sm">
+          <span class="w-2 h-2 rounded-full bg-[#1E824C] animate-pulse"></span>
+          Consultant Physician &amp; Rheumatologist · Mumbai
+        </div>
+        
+        <!-- Main Headline -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#0A1D37] leading-[1.15]">
+          Careful hands for the body's <span class="italic font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#1E824C] via-[#2E7D32] to-[#003366]">quiet</span> battles.
+        </h1>
+        
+        <!-- Lede Paragraph -->
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+          For 27 years, Dr. Shailaja Sabnis has helped patients across Mumbai understand and manage rheumatoid arthritis, lupus, osteoporosis and other autoimmune conditions — with a diagnosis-first approach and a treatment plan built around each person's life.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2" data-aos="fade-up" data-aos-delay="200">
+          <a class="inline-flex items-center justify-center bg-[#003366] hover:bg-[#0A1D37] text-white font-semibold px-7 py-4 rounded-full transition-all duration-300 shadow-lg shadow-[#003366]/25 hover:shadow-xl hover:shadow-[#003366]/40 hover:-translate-y-0.5 text-center group" href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">
+            Book an appointment
+            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+          <a class="inline-flex items-center justify-center border-2 border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-300 text-center hover:shadow-md" href="tel:+919821234075">
+            Call 98212 34075
+          </a>
+        </div>
+
+        <!-- Credentials List -->
+        <ul class="space-y-3 pt-6 border-t border-slate-200/80 text-xs sm:text-sm text-slate-700 font-medium" data-aos="fade-up" data-aos-delay="300">
+          <li class="flex items-start gap-3">
+            <span class="flex items-center justify-center w-5 h-5 rounded-full bg-[#1E824C]/15 text-[#1E824C] font-bold text-xs shrink-0 mt-0.5">✓</span>
+            <span>M.D. (Medicine) — L.T.M.M.C. &amp; L.T.M.G. Hospital, Sion, Mumbai</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="flex items-center justify-center w-5 h-5 rounded-full bg-[#1E824C]/15 text-[#1E824C] font-bold text-xs shrink-0 mt-0.5">✓</span>
+            <span>Diploma in Rheumatology — South Wales University, U.K.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="flex items-center justify-center w-5 h-5 rounded-full bg-[#1E824C]/15 text-[#1E824C] font-bold text-xs shrink-0 mt-0.5">✓</span>
+            <span>Consulting at Lilavati, Nanavati Max &amp; Holy Spirit Hospitals</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Photo Column -->
+      <div class="lg:col-span-5 relative flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+        <div class="relative max-w-sm sm:max-w-md w-full group">
+          
+          <!-- Outer Decorative Glow/Border Backing -->
+          <div class="absolute -inset-1.5 bg-gradient-to-tr from-[#003366] via-[#1E824C] to-[#003366] rounded-3xl blur-md opacity-30 group-hover:opacity-60 transition duration-500"></div>
+          
+          <!-- Doctor Image -->
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+            <img class="w-full h-[420px] sm:h-[480px] object-cover object-top transform group-hover:scale-105 transition duration-700" src="https://drshailajasabnis.in/media/shop-148/dr-shailaja-sabnis/dr-shailaja-sabnis-980039.jpg" alt="Dr Shailaja Sabnis, Consultant Rheumatologist">
+          </div>
+          
+          <!-- Floating Experience Badge Overlay -->
+          <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 sm:-left-6 sm:translate-x-0 bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-2xl px-5 py-3.5 rounded-2xl flex items-center gap-4 text-xs sm:text-sm text-slate-700 w-[92%] sm:w-auto" data-aos="zoom-in" data-aos-delay="400">
+            <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#003366] to-[#0A1D37] text-white shadow-md">
+              <span class="text-2xl font-black">27</span>
+            </div>
+            <div class="leading-tight font-semibold text-[#0A1D37]">
+              Years treating rheumatic<br><span class="text-[#1E824C] font-normal">&amp; autoimmune disease</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Premium Stats Section with Logo-Derived Palette -->
+<section id="stats" class="relative overflow-hidden bg-[#0A1D37] py-20 font-sans text-white border-y border-[#1E3A60]">
+  
+  <!-- Subtle Glowing Ambient Backlights (Deep Blue & Emerald Green) -->
+  <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#004B87]/30 rounded-full blur-[120px] pointer-events-none"></div>
+  <div class="absolute -bottom-32 left-1/4 w-[400px] h-[200px] bg-[#2E7D32]/25 rounded-full blur-[100px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Grid Container with Glassmorphic Card Styling -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      
+      <!-- Stat Card 1 -->
+      <div class="group relative bg-[#0F2847]/70 backdrop-blur-md border border-[#1E3A60] hover:border-[#2E7D32]/60 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#004B87]/30 flex flex-col justify-between overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#2E7D32]/20 to-transparent rounded-bl-full pointer-events-none transition-opacity duration-300 group-hover:opacity-100 opacity-40"></div>
+        <div class="flex items-baseline space-x-1">
+          <span class="text-5xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-[#2E7D32]">
+            <span class="counter" data-target="27">0</span>
+          </span>
+          <span class="text-3xl font-extrabold text-[#2E7D32]">+</span>
+        </div>
+        <div class="mt-4 pt-4 border-t border-[#1E3A60]">
+          <p class="text-sm font-semibold uppercase tracking-wider text-slate-300 group-hover:text-white transition-colors">Years in Practice</p>
+        </div>
+      </div>
+
+      <!-- Stat Card 2 -->
+      <div class="group relative bg-[#0F2847]/70 backdrop-blur-md border border-[#1E3A60] hover:border-[#004B87]/60 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#004B87]/30 flex flex-col justify-between overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#004B87]/30 to-transparent rounded-bl-full pointer-events-none transition-opacity duration-300 group-hover:opacity-100 opacity-40"></div>
+        <div class="flex items-baseline space-x-1">
+          <span class="text-5xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-[#004B87]">
+            <span class="counter" data-target="6">0</span>
+          </span>
+        </div>
+        <div class="mt-4 pt-4 border-t border-[#1E3A60]">
+          <p class="text-sm font-semibold uppercase tracking-wider text-slate-300 group-hover:text-white transition-colors">Hospitals &amp; Clinics</p>
+        </div>
+      </div>
+
+      <!-- Stat Card 3 -->
+      <div class="group relative bg-[#0F2847]/70 backdrop-blur-md border border-[#1E3A60] hover:border-[#2E7D32]/60 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#004B87]/30 flex flex-col justify-between overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#2E7D32]/20 to-transparent rounded-bl-full pointer-events-none transition-opacity duration-300 group-hover:opacity-100 opacity-40"></div>
+        <div class="flex items-baseline space-x-1">
+          <span class="text-5xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-[#2E7D32]">
+            <span class="counter" data-target="48">0</span>
+          </span>
+          <span class="text-3xl font-extrabold text-[#2E7D32]">+</span>
+        </div>
+        <div class="mt-4 pt-4 border-t border-[#1E3A60]">
+          <p class="text-sm font-semibold uppercase tracking-wider text-slate-300 group-hover:text-white transition-colors">Talks &amp; Conferences</p>
+        </div>
+      </div>
+
+      <!-- Stat Card 4 -->
+      <div class="group relative bg-[#0F2847]/70 backdrop-blur-md border border-[#1E3A60] hover:border-[#004B87]/60 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#004B87]/30 flex flex-col justify-between overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#004B87]/30 to-transparent rounded-bl-full pointer-events-none transition-opacity duration-300 group-hover:opacity-100 opacity-40"></div>
+        <div class="flex items-baseline space-x-1">
+          <span class="text-5xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-[#004B87]">
+            <span class="counter" data-target="1999">0</span>
+          </span>
+        </div>
+        <div class="mt-4 pt-4 border-t border-[#1E3A60]">
+          <p class="text-sm font-semibold uppercase tracking-wider text-slate-300 group-hover:text-white transition-colors">Private Practice Since</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Smooth Counter Script with Easing -->
+  <script>
+    (function() {
+      const counters = document.querySelectorAll('.counter');
+      const statsSection = document.getElementById('stats');
+      let started = false;
+
+      function easeOutQuad(t) {
+        return t * (2 - t);
+      }
+
+      function animateCounter(counter) {
+        const target = +counter.getAttribute('data-target');
+        const duration = 2200; // Animation duration (ms)
+        const startTime = performance.now();
+
+        function update(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easedProgress = easeOutQuad(progress);
+          
+          const currentVal = Math.floor(easedProgress * target);
+          counter.innerText = currentVal.toLocaleString();
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            counter.innerText = target.toLocaleString();
+          }
+        }
+
+        requestAnimationFrame(update);
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !started) {
+            started = true;
+            counters.forEach(counter => animateCounter(counter));
+          }
+        });
+      }, { threshold: 0.3 });
+
+      if (statsSection) {
+        observer.observe(statsSection);
+      }
+    })();
+  </script>
+</section>
+
+<!-- About Section (Light Theme Variant) -->
+<section id="about" class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-20 font-sans text-slate-800 border-b border-slate-200">
+  
+  <!-- Subtle Ambient Glow Effects for Light Background -->
+  <div class="absolute top-1/2 -left-24 -translate-y-1/2 w-96 h-96 bg-[#003366]/5 rounded-full blur-[140px] pointer-events-none"></div>
+  <div class="absolute -bottom-20 right-10 w-80 h-80 bg-[#1E824C]/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">
+      
+      <!-- Text Content Column -->
+      <div class="lg:col-span-7 space-y-6" data-aos="fade-right">
+        <!-- Eyebrow Tag -->
+        <div class="inline-block text-xs sm:text-sm font-semibold tracking-widest text-[#1E824C] uppercase bg-[#1E824C]/10 border border-[#1E824C]/20 px-4 py-1.5 rounded-full">
+          About
+        </div>
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0A1D37] leading-tight">
+          A physician's eye, <br class="hidden sm:inline">
+          <span class="italic font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#1E824C] to-[#003366]">a specialist's depth.</span>
+        </h2>
+
+        <!-- Paragraphs -->
+        <div class="space-y-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+          <p>
+            Dr. Shailaja Sabnis began her career with an M.B.B.S. from Seth G.S. Medical College &amp; K.E.M. Hospital, followed by an M.D. in Medicine and a three-year residency spanning I.C.U., Cardiology, Endocrinology, Nephrology and Rheumatology. In 2022, after two decades in practice, she returned to formal study to complete a Diploma in Rheumatology from South Wales University, U.K. — sharpening a specialism she had already been practising in Mumbai since 1999.
+          </p>
+          <p>
+            That dual grounding, broad internal medicine and focused rheumatology, shapes how she works: every joint or skin complaint is read against the whole patient, not in isolation. She currently consults at Lilavati Hospital, Nanavati Max Super Speciality Hospital, Bhartiya Arogya Nidhi Hospital and Holy Spirit Hospital, alongside her long-running private practice in Andheri East.
+          </p>
+        </div>
+      </div>
+
+      <!-- Premium Light Quote Card Column -->
+      <div class="lg:col-span-5" data-aos="fade-left" data-aos-delay="150">
+        <div class="relative group">
+          <!-- Outer Shadow Glow Frame -->
+          <div class="absolute -inset-0.5 bg-gradient-to-r from-[#003366]/20 via-[#1E824C]/30 to-[#003366]/20 rounded-3xl blur opacity-60 group-hover:opacity-100 transition duration-500"></div>
+          
+          <!-- Card Body -->
+          <div class="relative bg-white border border-slate-200/80 rounded-3xl p-8 sm:p-10 shadow-xl space-y-6">
+            
+            <!-- Large Decorative Quote Icon -->
+            <div class="text-6xl leading-none font-serif text-[#1E824C] select-none h-8">
+              “
+            </div>
+
+            <!-- Quote Text -->
+            <p class="text-lg sm:text-xl font-medium text-slate-700 leading-relaxed italic font-serif">
+              Rheumatic disease rarely announces itself all at once. My work is to listen for it early, treat it precisely, and stay with the patient for the long course of managing it.
+            </p>
+
+            <!-- Author Attribution -->
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <cite class="not-italic text-sm sm:text-base font-bold text-[#0A1D37] tracking-wide">
+                — Dr. Shailaja Sabnis
+              </cite>
+              <div class="h-2.5 w-2.5 rounded-full bg-[#1E824C]"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Areas of Expertise Section -->
+<section id="expertise" class="relative overflow-hidden bg-[#040B15] py-24 font-sans text-white border-b border-[#1E3A60]/50">
+  
+  <!-- Ambient Backlight Glows -->
+  <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[650px] h-[650px] bg-[#003366]/20 rounded-full blur-[160px] pointer-events-none"></div>
+  <div class="absolute -bottom-20 right-10 w-96 h-96 bg-[#1E824C]/15 rounded-full blur-[140px] pointer-events-none"></div>
+  <div class="absolute top-10 left-10 w-80 h-80 bg-[#1E824C]/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-20 space-y-4" data-aos="fade-up">
+      <div class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold tracking-widest text-[#1E824C] uppercase bg-[#1E824C]/10 border border-[#1E824C]/30 px-4 py-1.5 rounded-full backdrop-blur-md shadow-inner">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#1E824C] animate-pulse"></span>
+        Areas of Expertise
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+        Conditions treated, <span class="italic font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#1E824C] via-[#34A853] to-emerald-200">start to finish</span>
+      </h2>
+      <p class="text-base sm:text-lg text-slate-400 leading-relaxed font-light">
+        From first diagnosis to long-term disease management, across the full range of rheumatic and autoimmune conditions.
+      </p>
+    </div>
+
+    <!-- Expertise Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      
+      <!-- Card 01 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+        <!-- Top Accent Border -->
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">01</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Rheumatoid Arthritis</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Early diagnosis and personalised, treat-to-target management.</p>
+        </div>
+      </div>
+
+      <!-- Card 02 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">02</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">SLE (Lupus)</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Comprehensive care for systemic lupus erythematosus, including flare management.</p>
+        </div>
+      </div>
+
+      <!-- Card 03 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">03</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Ankylosing Spondylitis</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Targeted therapy for spinal inflammation, stiffness and seronegative spondyloarthropathy.</p>
+        </div>
+      </div>
+
+      <!-- Card 04 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">04</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Osteoarthritis</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Medical management of joint wear, pain and mobility loss.</p>
+        </div>
+      </div>
+
+      <!-- Card 05 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">05</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Osteoporosis &amp; Bone Health</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Screening and treatment of metabolic bone and joint disease.</p>
+        </div>
+      </div>
+
+      <!-- Card 06 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">06</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Gout &amp; Hyperuricemia</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Acute care and long-term uric acid management.</p>
+        </div>
+      </div>
+
+      <!-- Card 07 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">07</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Psoriatic Arthritis</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Joint and skin co-management, often alongside dermatology.</p>
+        </div>
+      </div>
+
+      <!-- Card 08 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">08</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Vasculitis &amp; APLA</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Care for vasculitis, antiphospholipid antibody syndrome and clotting disorders.</p>
+        </div>
+      </div>
+
+      <!-- Card 09 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">09</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Pregnancy &amp; Rheumatic Disease</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Pre-conception counselling and safety planning for women on rheumatology treatment.</p>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">10</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Recurrent Pregnancy Loss</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Autoimmune work-up for recurrent miscarriage.</p>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">11</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">Thyroid Disorders</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Diagnosis and regulation of thyroid imbalance.</p>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="group relative bg-[#0D223F] border border-[#1E3A60] hover:border-[#1E824C]/80 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#1E824C]/20 flex flex-col justify-between overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#1E824C] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="flex items-center justify-between mb-6">
+          <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#1E824C]/15 border border-[#1E824C]/30 text-base font-black font-mono text-[#34A853] shadow-inner group-hover:scale-110 transition-transform duration-300">12</span>
+          <div class="w-2.5 h-2.5 rounded-full bg-slate-700 group-hover:bg-[#1E824C] group-hover:shadow-[0_0_10px_#1E824C] transition-all"></div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors mb-2 tracking-wide">General Internal Medicine</h3>
+          <p class="text-sm text-slate-300/80 leading-relaxed font-light">Diabetes, hypertension, fever and infection management.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- <section class="journey" id="journey">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The Journey</div>
+      <h2>Three decades, <span class="italic">one thread</span></h2>
+      <p>From residency wards to the operating principles of a modern rheumatology practice.</p>
+    </div>
+    <div class="spine">
+      <div class="spine-item">
+        <div class="yr">1986 – 1992</div>
+        <h4>M.B.B.S., Seth G.S. Medical College &amp; K.E.M. Hospital, Mumbai</h4>
+        <p>Foundational medical training at one of Mumbai's leading teaching hospitals.</p>
+      </div>
+      <div class="spine-item">
+        <div class="yr">1992 – 1995</div>
+        <h4>M.D. (Medicine) &amp; Residency, L.T.M.M.C. &amp; L.T.M.G. Hospital, Sion</h4>
+        <p>Three years of residency across I.C.U., Rheumatology, Cardiology, Endocrinology and Hematology.</p>
+      </div>
+      <div class="spine-item">
+        <div class="yr">1995 – 1999</div>
+        <h4>Lecturer in Medicine &amp; Rheumatology</h4>
+        <p>Taught undergraduate and postgraduate students at L.T.M.M. College &amp; L.T.M.G. Hospital, Sion.</p>
+      </div>
+      <div class="spine-item">
+        <div class="yr">Since 1999</div>
+        <h4>Independent Consultant Practice, Andheri East</h4>
+        <p>In private practice as consultant physician and rheumatologist.</p>
+      </div>
+      <div class="spine-item">
+        <div class="yr">Since 2002</div>
+        <h4>Honorary Consultant Rheumatologist, Holy Spirit Hospital</h4>
+        <p>Ongoing rheumatology lectures for D.N.B. students continue at Holy Spirit to date.</p>
+      </div>
+      <div class="spine-item">
+        <div class="yr">2021 – 2022</div>
+        <h4>Diploma in Rheumatology, South Wales University, U.K.</h4>
+        <p>Formalised specialist training after two decades of clinical rheumatology practice.</p>
+      </div>
+      <div class="spine-item">
+        <div class="yr">2022 – Present</div>
+        <h4>Consultant Rheumatologist, Lilavati Hospital, Bandra West</h4>
+        <p>The most recent addition to a growing multi-hospital consulting practice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="affiliations">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Where to Find Her</div>
+      <h2>Consulting <span class="italic">rooms</span> across Mumbai</h2>
+    </div>
+    <div class="affil-grid">
+      <div class="affil-card"><h5>Lilavati Hospital</h5><span>Bandra West · since 2022</span></div>
+      <div class="affil-card"><h5>Nanavati Max Super Speciality Hospital</h5><span>Vile Parle West · since 2016</span></div>
+      <div class="affil-card"><h5>Bhartiya Arogya Nidhi Hospital</h5><span>Juhu · since 2015</span></div>
+      <div class="affil-card"><h5>Holy Spirit Hospital</h5><span>Andheri East · Honorary Consultant since 2002</span></div>
+      <div class="affil-card"><h5>Sneh Nursing Home</h5><span>Andheri East · Private Practice</span></div>
+      <div class="affil-card"><h5>Medico Surgical Clinic</h5><span>Andheri East · Private Practice</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Published Work</div>
+      <h2>Contributions to the <span class="italic">literature</span></h2>
+    </div>
+    <div class="pub-list">
+      <div class="pub-item">
+        <div class="py">Sept 2016</div>
+        <div><h4>Analytical &amp; Clinical Evaluation of an Immunoassay for Estimating Immunogenicity of Infliximab and Etanercept in the Indian Population</h4><p>Co-Author — JAPI, Vol. 64</p></div>
+      </div>
+      <div class="pub-item">
+        <div class="py">2005</div>
+        <div><h4>Hypotension</h4><p>Contributed chapter — Textbook of Complications in Gynecological Surgeries, Jaypee Publishers</p></div>
+      </div>
+      <div class="pub-item">
+        <div class="py">Nov 2005</div>
+        <div><h4>Clinical Relationship Between Diabetes, Metabolic Syndrome and Vascular Health</h4><p>Physician Times, Issue 2</p></div>
+      </div>
+      <div class="pub-item">
+        <div class="py">—</div>
+        <div><h4>Felodipine as an Anti-Hypertensive Agent</h4><p>Journal of Association of Physicians of India (JAPI)</p></div>
+      </div>
+      <div class="pub-item">
+        <div class="py">—</div>
+        <div><h4>Emergencies in Rheumatological Medicine</h4><p>Journal of Indian Rheumatology Association (JIRA)</p></div>
+      </div>
+      <div class="pub-item">
+        <div class="py">March 1998</div>
+        <div><h4>Anti Cardiolipin Antibody Syndrome</h4><p>JAPI</p></div>
+      </div>
+      <div class="pub-item">
+        <div class="py">Sept 1998</div>
+        <div><h4>Pyknodysostosis</h4><p>JAPI</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="presentations" id="presentations">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Teaching &amp; Speaking</div>
+      <h2>Recent talks &amp; <span class="italic">panels</span></h2>
+      <p>Faculty for D.N.B., M.Ch. and postgraduate rheumatology teaching since 1995, and a regular speaker at national conferences.</p>
+    </div>
+    <div class="pres-grid">
+      <div class="pres-row"><span class="py">May 2026</span><span class="pt">Understanding Lupus Better — Clinical Challenges &amp; Diagnostic Perspective, Webinar for Lupus Day</span></div>
+      <div class="pres-row"><span class="py">Feb 2026</span><span class="pt">Shingles Vaccination in Autoimmune Rheumatic Diseases, IMA Mumbai</span></div>
+      <div class="pres-row"><span class="py">Feb 2026</span><span class="pt">Osteoporosis Update, IMA Mumbai West Branch</span></div>
+      <div class="pres-row"><span class="py">Jan 2026</span><span class="pt">Panelist, CTD Panel Discussion, MAPCON</span></div>
+      <div class="pres-row"><span class="py">2025</span><span class="pt">Panelist, Clinicopathological Discussion for Sarcoidosis, IRACON</span></div>
+      <div class="pres-row"><span class="py">2025</span><span class="pt">JAK Inhibitors in Rheumatoid Arthritis — Safety in Pregnancy, IRACON</span></div>
+      <div class="pres-row"><span class="py">Jul 2025</span><span class="pt">Osteoporosis — Treatment, MAHA-GERICON</span></div>
+      <div class="pres-row"><span class="py">May 2025</span><span class="pt">Lupus Uncovered — Advances in Diagnosis &amp; Management, Webinar</span></div>
+      <div class="pres-row"><span class="py">Feb 2025</span><span class="pt">Chairperson, Rheumatology &amp; Pulmonology in ILD Symposium</span></div>
+      <div class="pres-row"><span class="py">Feb 2025</span><span class="pt">Osteoarthritis Medical Management, VPCON</span></div>
+      <div class="pres-row"><span class="py">Oct 2024</span><span class="pt">Different Treatment Strategies in RA Patient Profiles, MAPCON</span></div>
+      <div class="pres-row"><span class="py">Jul 2024</span><span class="pt">Approach to Arthritis, JMACON</span></div>
+    </div>
+    <div class="more-wrap">
+      <details>
+        <summary>View full speaking history (1995 – 2024)</summary>
+        <div class="full-list" id="fullList"></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding: 0 32px;">
+  <div class="cta-band">
+    <div>
+      <h3>Ready to talk through your symptoms?</h3>
+      <p>Consultations available at Andheri East, Bandra West, Vile Parle West and Juhu.</p>
+    </div>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a class="btn btn-primary" href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn-ghost" href="mailto:drshailajasabnis@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Visit or <span class="italic">reach out</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <div class="ic">@</div>
+          <div><h5>Email</h5><a href="mailto:drshailajasabnis@gmail.com">drshailajasabnis@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="ic">Tel</div>
+          <div><h5>Phone</h5><a href="tel:+919821234075">+91 98212 34075</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="ic">Loc</div>
+          <div><h5>Primary Clinic</h5><p>Sneh Nursing Home / Medico Surgical Clinic, Andheri East, Mumbai – 400069</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ic">Hrs</div>
+          <div><h5>Consulting Hospitals</h5><p>Lilavati · Nanavati Max · Bhartiya Arogya Nidhi · Holy Spirit</p></div>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15079.609487433388!2d72.83850215502636!3d19.11193839034843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9e51ea7fc67%3A0xac8df24d19746069!2sShailaja%20Sabnis!5e0!3m2!1sen!2sin!4v1751130783751!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Dr. Shailaja Sabnis · Consultant Physician &amp; Rheumatologist, Mumbai</p>
+  </div>
+</footer> -->
+
+<section id="contact" class="relative py-20 lg:py-28 bg-slate-50 font-sans overflow-hidden">
+  <!-- Subtle Background Decorative Glows -->
+  <div class="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-[#1995ad]/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-[#0d5c75]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+      <span class="inline-block text-[#1995ad] text-sm font-semibold uppercase tracking-wider bg-[#1995ad]/10 px-4 py-1.5 rounded-full mb-4">
+        Get in Touch
+      </span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 tracking-tight">
+        Visit or <span class="italic text-[#0d5c75] font-serif">reach out</span>
+      </h2>
+      <div class="w-16 h-1 bg-[#1995ad] mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- Contact Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+      
+      <!-- Contact Cards Column -->
+      <div class="lg:col-span-5 space-y-4 flex flex-col justify-between" data-aos="fade-right" data-aos-delay="100">
+        
+        <!-- Email Card -->
+        <a href="mailto:drshailajasabnis@gmail.com" class="group flex items-start gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-[#1995ad]/40 transition-all duration-300">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-[#0d5c75]/10 group-hover:bg-[#0d5c75] text-[#0d5c75] group-hover:text-white flex items-center justify-center transition-colors duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <h5 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-0.5">Email</h5>
+            <span class="text-base font-semibold text-slate-800 group-hover:text-[#1995ad] transition-colors duration-200">
+              drshailajasabnis@gmail.com
+            </span>
+          </div>
+        </a>
+
+        <!-- Phone Card -->
+        <a href="tel:+919821234075" class="group flex items-start gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-[#1995ad]/40 transition-all duration-300">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-[#0d5c75]/10 group-hover:bg-[#0d5c75] text-[#0d5c75] group-hover:text-white flex items-center justify-center transition-colors duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <div>
+            <h5 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-0.5">Phone</h5>
+            <span class="text-base font-semibold text-slate-800 group-hover:text-[#1995ad] transition-colors duration-200">
+              +91 98212 34075
+            </span>
+          </div>
+        </a>
+
+        <!-- Location Card -->
+        <div class="flex items-start gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-[#0d5c75]/10 text-[#0d5c75] flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div>
+            <h5 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-0.5">Primary Clinic</h5>
+            <p class="text-sm font-medium text-slate-700 leading-relaxed">
+              Sneh Nursing Home / Medico Surgical Clinic, Andheri East, Mumbai – 400069
+            </p>
+          </div>
+        </div>
+
+        <!-- Consulting Hospitals Card -->
+        <div class="flex items-start gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm">
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-[#0d5c75]/10 text-[#0d5c75] flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0h4m-4 0H9m4 0V7m0 0h4m-4 0H9"/></svg>
+          </div>
+          <div>
+            <h5 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-0.5">Consulting Hospitals</h5>
+            <p class="text-sm font-medium text-slate-700 leading-relaxed">
+              Lilavati &middot; Nanavati Max &middot; Bhartiya Arogya Nidhi &middot; Holy Spirit
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Map Column -->
+      <div class="lg:col-span-7 h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-xl border-4 border-white relative" data-aos="fade-left" data-aos-delay="200">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15079.609487433388!2d72.83850215502636!3d19.11193839034843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9e51ea7fc67%3A0xac8df24d19746069!2sShailaja%20Sabnis!5e0!3m2!1sen!2sin!4v1751130783751!5m2!1sen!2sin" 
+          class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="w-full bg-[#002030] text-white font-sans mt-auto border-t-4 border-[#00b4d8]">
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-12 md:py-14">
+
+    <!-- Main Footer Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+
+      <!-- ================= BRAND ================= -->
+      <div class="space-y-5">
+
+        <a href="#" class="inline-flex items-center bg-white rounded-xl px-4 py-3 shadow-lg">
+          <img 
+            src="https://ik.imagekit.io/iuiy6mihw/Dr.ShailajaLogo.png"
+            alt="Dr. Shailaja Sabnis Logo"
+            class="h-16 w-auto object-contain"
+          >
+        </a>
+
+        <p class="text-slate-300 text-sm leading-7 max-w-xs">
+          Dedicated to compassionate healthcare, clinical excellence,
+          and personalized patient care through expert medical consultation.
+        </p>
+
+        <!-- Small accent line -->
+        <div class="w-14 h-1 bg-[#00b4d8] rounded-full"></div>
+
+      </div>
+
+
+      <!-- ================= QUICK LINKS ================= -->
+      <div>
+
+        <h3 class="text-sm font-bold mb-5 text-[#00b4d8] uppercase tracking-widest">
+          Quick Links
+        </h3>
+
+        <ul class="space-y-3 text-sm">
+
+          <li>
+            <a href="#about"
+               class="text-slate-300 hover:text-[#00b4d8] transition-all duration-200">
+              About Dr. Shailaja
+            </a>
+          </li>
+
+          <li>
+            <a href="#expertise"
+               class="text-slate-300 hover:text-[#00b4d8] transition-all duration-200">
+              Areas of Expertise
+            </a>
+          </li>
+
+          <li>
+            <a href="#journey"
+               class="text-slate-300 hover:text-[#00b4d8] transition-all duration-200">
+              Professional Journey
+            </a>
+          </li>
+
+          <li>
+            <a href="#publications"
+               class="text-slate-300 hover:text-[#00b4d8] transition-all duration-200">
+              Publications
+            </a>
+          </li>
+
+          <li>
+            <a href="#presentations"
+               class="text-slate-300 hover:text-[#00b4d8] transition-all duration-200">
+              Talks & Presentations
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- ================= CONTACT ================= -->
+      <div>
+
+        <h3 class="text-sm font-bold mb-5 text-[#00b4d8] uppercase tracking-widest">
+          Get in Touch
+        </h3>
+
+        <div class="space-y-5">
+
+          <!-- Address -->
+          <div class="flex items-start gap-3">
+
+            <div class="flex-shrink-0 mt-1">
+              <svg class="w-5 h-5 text-[#00b4d8]"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-6">
+              Sneh Nursing Home,<br>
+              Andheri East,<br>
+              Mumbai – 400069
+            </p>
+
+          </div>
+
+
+          <!-- Phone -->
+          <div class="flex items-center gap-3">
+
+            <svg class="w-5 h-5 text-[#00b4d8] flex-shrink-0"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 011.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+
+            <a href="tel:+919821234075"
+               class="text-slate-300 text-sm hover:text-[#00b4d8] transition-colors font-medium">
+              +91 98212 34075
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= CONSULTATION ================= -->
+      <div>
+
+        <h3 class="text-sm font-bold mb-5 text-[#00b4d8] uppercase tracking-widest">
+          Book Consultation
+        </h3>
+
+        <p class="text-slate-300 text-sm leading-6 mb-5">
+          Reach out directly on WhatsApp to schedule an appointment
+          or enquire about a consultation.
+        </p>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="group flex items-center justify-center gap-2 w-full
+                  bg-[#0f6880] hover:bg-[#00b4d8]
+                  text-white font-semibold
+                  px-5 py-3 rounded-lg
+                  transition-all duration-300
+                  shadow-md hover:shadow-xl
+                  hover:-translate-y-0.5">
+
+          <!-- WhatsApp Icon -->
+          <svg class="w-5 h-5 group-hover:scale-110 transition-transform"
+               fill="currentColor"
+               viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M20.52 3.449A11.815 11.815 0 0012.04 0C5.46 0 .1 5.36.1 11.94c0 2.104.55 4.158 1.595 5.965L.033 23.94l6.175-1.62a11.92 11.92 0 005.832 1.484h.005c6.58 0 11.94-5.36 11.94-11.94a11.9 11.9 0 00-3.465-8.415zM12.045 21.79h-.004a9.87 9.87 0 01-5.03-1.377l-.36-.214-3.664.96.978-3.573-.235-.366a9.865 9.865 0 01-1.515-5.28c0-5.45 4.437-9.887 9.892-9.887a9.83 9.83 0 017.003 2.904 9.83 9.83 0 012.898 7.008c-.003 5.45-4.44 9.885-9.963 9.885z"/>
+          </svg>
+
+          Book via WhatsApp
+
+        </a>
+
+        <p class="text-xs text-slate-500 mt-3 text-center">
+          Quick & convenient appointment enquiry
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= BOTTOM BAR ================= -->
+    <div class="mt-12 pt-6 border-t border-[#0f6880]/50">
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+
+        <!-- Copyright -->
+        <p class="text-xs text-slate-400 text-center md:text-left">
+          &copy;
+          <span id="footerYear"></span>
+          Dr. Shailaja Sabnis. All rights reserved.
+        </p>
+
+        <!-- Links -->
+        <div class="flex items-center gap-5 text-xs">
+
+          <a href="#"
+             class="text-slate-400 hover:text-[#00b4d8] transition-colors">
+            Privacy Policy
+          </a>
+
+          <span class="text-slate-600">|</span>
+
+          <a href="#"
+             class="text-slate-400 hover:text-[#00b4d8] transition-colors">
+            Terms of Service
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Dynamic Year -->
+  <script>
+    document.getElementById("footerYear").textContent =
+      new Date().getFullYear();
+  </script>
+
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919821234075?text=Hello%2C%20I%20have%20a%20query"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp"
+   class="fixed bottom-5 right-5 z-[9999]
+          w-14 h-14
+          bg-[#25D366] hover:bg-[#20bd5a]
+          text-white
+          rounded-full
+          flex items-center justify-center
+          shadow-xl
+          hover:scale-110
+          transition-all duration-300">
+
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+
+</a>
+
+<script>
+  const fullPresentations = [
+    ["Jun 2024","Chairperson, Autoimmunity Symposium"],
+    ["Jun 2024","Chairperson, Renal Involvement in Rheumatology, Masterclass in Rheumatology"],
+    ["Feb 2024","Guideline Updates in Psoriatic Arthritis, IMA Seminar"],
+    ["Nov 2023","Chairperson, Approach to Primary Immunodeficiencies, IRACON"],
+    ["Dec 2023","Conquering RA, IMA Seminar"],
+    ["Sept 2023","Chairperson, Should Rituximab Be Given Upfront in Myositis, MRACON"],
+    ["Mar 2023","Psychosocial Burden of Rheumatic Diseases, Mission Arthritis India"],
+    ["2022","Chairperson, Primary Care Rheumatology for Physicians, IRACON"],
+    ["2022","Newer Treatment Modalities in Gout, MRACON"],
+    ["Jun 2021","Rheumatology &amp; Musculoskeletal Diseases 'Treat to Target', Live Webcast"],
+    ["May 2021","Clinical Experience of Tofacitinib in Psoriasis, Webinar"],
+    ["Mar 2021","Managing Arthritis During COVID-19, Facebook Chat, Nanavati Hospital"],
+    ["Nov 2020","Overview of Joint Evaluation, OATH Zoom Meeting"],
+    ["Oct 2020","Panel Discussion — Right Biologics at Right Time in RA During COVID-19"],
+    ["Oct 2020","Hyperuricemia Simplified, Facebook Live"],
+    ["Sept 2020","Clinical Experience of JAK Inhibitors (Olumiant), Webinar"],
+    ["Jul 2020","Essential Updates for Psoriatic Arthritis &amp; Rheumatology, Dermatology Group Webinar"],
+    ["May 2020","Management of SLE in COVID-19 Time, Mission Arthritis India"],
+    ["Sept 2019","Baricitinib: Latest Updates &amp; Real World Experience, with Prof. Josef Smolen"],
+    ["Sept 2019","Improving Outcome in Ankylosing Spondylitis with Etanercept, Webinar"],
+    ["Jan 2019","Case-Based Learning — Tofacitinib in Biological Failed Patient, with Dr. Roy M. Fleischman"],
+    ["Sept 2018","Panel Discussion on Tofacitinib — JAK Inhibitor"],
+    ["Nov 2018","International Speaker Programme for Oluminant"],
+    ["2015","Poster Presentation, ACR — Anti-TNF Antibodies"],
+    ["Mar 2014","Advances in Rheumatology, IMA Juhu, International Women's Day"],
+    ["Jan 2013","Treat to Target in Rheumatoid Arthritis — The Indian Scenario, RACE Symposium, Kolkata"],
+    ["Jun 2012","Early Diagnosis of Rheumatoid Arthritis, Assoc. of Allopathic Family Physicians"],
+    ["Jun 2012","Early Management of RA, Assoc. of Allopathic Physicians, Malad"],
+    ["Jan 2012","Early Treatment of Arthritis, VPCON"],
+    ["2010 – 2011","Faculty for OATH (Osteoarthritis Treatment in Harmony), Andheri / Vile Parle / Santacruz Medical Associations"],
+    ["2010 – 2011","Rheumatology Lectures for Johnson &amp; Johnson's OATH Programme"],
+    ["1995","Methotrexate: First Line DMARD in Rheumatoid Arthritis, IRACON"],
+    ["1995","Hypersensitivity Pneumonitis to Methotrexate, Indian Pharmacology Society Meeting"]
+  ];
+  const list = document.getElementById('fullList');
+  fullPresentations.forEach(([y,t])=>{
+    const row = document.createElement('div');
+    row.className = 'pres-row';
+    row.innerHTML = `<span class="py">${y}</span><span class="pt">${t}</span>`;
+    list.appendChild(row);
+  });
+
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); } });
+  }, {threshold:0.12});
+  document.querySelectorAll('section').forEach(s=>{ s.classList.add('fade-in'); io.observe(s); });
+</script>
+
+
+  <!-- Initialize AOS JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: 'ease-out-cubic'
+      });
+    });
+  </script>
+</body>
+</html>
