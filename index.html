@@ -95,14 +95,14 @@
 <!-- NAV -->
 <header id="main-header" class="sticky top-0 z-50 bg-ivory/90 backdrop-blur-md border-b border-line transition-all duration-300">
 
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-1.5 flex items-center justify-between transition-all duration-300">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-2 flex items-center justify-between transition-all duration-300">
 
-    <!-- LOGO -->
+    <!-- LOGO - ENLARGED ON MOBILE, SAME ON DESKTOP -->
     <a href="#" class="inline-flex flex-shrink-0 items-center leading-none">
       <img 
         src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png" 
         alt="Dr. Shailaja Sabnis MD"
-        class="h-16 sm:h-18 md:h-20 lg:h-22 w-auto max-w-[300px] object-contain block"
+        class="h-24 sm:h-24 md:h-20 lg:h-22 w-auto max-w-[300px] sm:max-w-[300px] md:max-w-[300px] object-contain block"
       />
     </a>
 
@@ -228,9 +228,6 @@
 
 </header>
 
-
-
-
 <script>
   document.addEventListener('DOMContentLoaded', () => {
 
@@ -319,83 +316,215 @@
   });
 </script>
 
-<!-- HERO with AOS -->
-<section class="relative overflow-hidden pt-16" id="home">
-  <div class="absolute -top-44 -right-40 w-[640px] h-[640px] rounded-full opacity-90"
-       style="background:radial-gradient(circle at 30% 30%, #DCE6DD, transparent 70%);"></div>
-  <div class="max-w-6xl mx-auto px-6 md:px-8 relative z-10 grid md:grid-cols-[1.05fr_0.8fr] gap-10 md:gap-14 items-center pb-16">
+<!-- HERO - Ultra-Premium Version (Clean Background & Floating Image) -->
+<section class="relative overflow-hidden pt-10 min-h-[95vh] flex items-center justify-center bg-ivory" id="home">
+  
+  <!-- Premium Background Layer -->
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <!-- Base Mesh Gradient -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-ivory to-parchment/40"></div>
+    
+    <!-- Multi-Layer Glowing Ambient Orbs -->
+    <div class="absolute -top-32 -right-32 w-[700px] h-[700px] rounded-full opacity-50 blur-3xl animate-pulse-slow"
+         style="background: radial-gradient(circle, rgba(220, 230, 221, 0.8) 0%, rgba(220, 230, 221, 0) 70%);"></div>
+    <div class="absolute -bottom-48 -left-48 w-[600px] h-[600px] rounded-full opacity-40 blur-3xl animate-pulse-slow"
+         style="background: radial-gradient(circle, rgba(232, 220, 216, 0.8) 0%, rgba(232, 220, 216, 0) 70%);"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-20 blur-3xl"
+         style="background: radial-gradient(circle, rgba(196, 168, 160, 0.4) 0%, transparent 60%);"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 md:px-8 relative z-10 grid md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-16 items-center py-16">
+    
+    <!-- Left Content Column -->
     <div>
-      <div class="eyebrow flex items-center gap-2.5 font-mono text-xs uppercase tracking-widest text-sage font-medium" data-aos="fade-up" data-aos-duration="600">Consultant Physician &amp; Rheumatologist · Mumbai</div>
-      <h1 class="font-display font-normal text-sage-deep leading-tight text-4xl sm:text-5xl md:text-6xl mt-4 mb-5 -tracking-tight" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">Careful hands for the body's <span class="italic font-normal text-mauve">quiet</span> battles.</h1>
-      <p class="text-lg text-ink-soft max-w-md mb-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">For 27 years, Dr. Shailaja Sabnis has helped patients across Mumbai understand and manage rheumatoid arthritis, lupus, osteoporosis and other autoimmune conditions — with a diagnosis-first approach and a treatment plan built around each person's life.</p>
-      <div class="flex flex-wrap gap-3.5 mb-10" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-        <a class="inline-flex items-center gap-2 bg-sage-deep text-ivory font-semibold text-sm px-6 py-3.5 rounded-full hover:-translate-y-0.5 hover:shadow-lg hover:shadow-sage-deep/30 transition" href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">Book an appointment</a>
-        <a class="inline-flex items-center gap-2 border-[1.5px] border-sage-deep text-sage-deep font-semibold text-sm px-6 py-3.5 rounded-full hover:bg-parchment hover:-translate-y-0.5 transition" href="tel:+919821234075">Call 98212 34075</a>
+      <!-- Premium Eyebrow Badge -->
+      <div class="eyebrow inline-flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-sage-deep font-semibold bg-white/80 backdrop-blur-md px-5 py-2.5 rounded-full border border-sage-deep/15 shadow-sm hover:shadow-md transition-all duration-300" 
+           data-aos="fade-up" data-aos-duration="600">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage-deep opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-sage-deep"></span>
+        </span>
+        Consultant Physician &amp; Rheumatologist · Mumbai
       </div>
-      <ul class="flex flex-col gap-2.5 text-sm text-ink-soft">
-        <li class="flex gap-2.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250"><span class="text-mauve">◦</span> M.D. (Medicine) — L.T.M.M.C. &amp; L.T.M.G. Hospital, Sion, Mumbai</li>
-        <li class="flex gap-2.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"><span class="text-mauve">◦</span> Diploma in Rheumatology — South Wales University, U.K.</li>
-        <li class="flex gap-2.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350"><span class="text-mauve">◦</span> Consulting at Lilavati, Nanavati Max &amp; Holy Spirit Hospitals</li>
+      
+      <!-- Headline -->
+      <h1 class="font-display font-normal text-sage-deep leading-[1.15] text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-6 mb-6 tracking-tight" 
+          data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+        Careful hands for the body's 
+        <span class="italic font-light text-mauve relative inline-block">
+          quiet
+          <svg class="absolute -bottom-2 left-0 w-full overflow-visible" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 8C50 2 150 2 198 8" stroke="#C4A8A0" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span> 
+        battles.
+      </h1>
+      
+      <!-- Description -->
+      <p class="text-lg text-ink-soft/90 max-w-lg leading-relaxed mb-10 font-sans" 
+         data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+        For <span class="font-semibold text-sage-deep underline decoration-mauve/40 underline-offset-4">27 years</span>, Dr. Shailaja Sabnis has helped patients across Mumbai understand and manage rheumatoid arthritis, lupus, osteoporosis, and autoimmune conditions — through diagnosis-first, individualized care.
+      </p>
+      
+      <!-- Call to Action Buttons -->
+      <div class="flex flex-wrap gap-4 mb-12" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+        <a class="inline-flex items-center gap-3 bg-sage-deep text-ivory font-semibold text-sm px-8 py-4 rounded-full shadow-lg shadow-sage-deep/20 hover:shadow-2xl hover:shadow-sage-deep/40 hover:-translate-y-1 transition-all duration-300 group" 
+           href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">
+          <svg class="w-5 h-5 fill-current group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>Book an appointment</span>
+        </a>
+        <a class="inline-flex items-center gap-3 border border-sage-deep/40 bg-white/40 backdrop-blur-sm text-sage-deep font-semibold text-sm px-8 py-4 rounded-full hover:bg-sage-deep hover:text-ivory hover:-translate-y-1 transition-all duration-300 group" 
+           href="tel:+919821234075">
+          <svg class="w-5 h-5 stroke-current transition-colors" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span>Call 98212 34075</span>
+        </a>
+      </div>
+      
+      <!-- Key Credentials List -->
+      <ul class="space-y-3.5 text-sm text-ink-soft/85 border-t border-line/50 pt-8">
+        <li class="flex gap-3.5 items-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+          <span class="w-6 h-6 rounded-full bg-mauve/15 text-mauve flex items-center justify-center text-xs font-serif shrink-0">✦</span>
+          <span><strong class="font-semibold text-sage-deep">M.D. (Medicine)</strong> — L.T.M.M.C. &amp; L.T.M.G. Hospital, Sion, Mumbai</span>
+        </li>
+        <li class="flex gap-3.5 items-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+          <span class="w-6 h-6 rounded-full bg-mauve/15 text-mauve flex items-center justify-center text-xs font-serif shrink-0">✦</span>
+          <span><strong class="font-semibold text-sage-deep">Diploma in Rheumatology</strong> — South Wales University, U.K.</span>
+        </li>
+        <li class="flex gap-3.5 items-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+          <span class="w-6 h-6 rounded-full bg-mauve/15 text-mauve flex items-center justify-center text-xs font-serif shrink-0">✦</span>
+          <span>Consulting Physician at <strong class="font-semibold text-sage-deep">Lilavati, Nanavati Max &amp; Holy Spirit Hospitals</strong></span>
+        </li>
       </ul>
     </div>
-    <div class="relative" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
-      <img class="rounded-tl-[26px] rounded-tr-[26px] rounded-br-[26px] rounded-bl-[90px] border border-line shadow-2xl aspect-[4/5] object-cover object-top w-full"
-           src="https://drshailajasabnis.in/media/shop-148/dr-shailaja-sabnis/dr-shailaja-sabnis-980039.jpg" alt="Dr Shailaja Sabnis, Consultant Rheumatologist">
-      <div class="absolute -bottom-5 -left-5 sm:-left-6 bg-white border border-line rounded-2xl px-5 py-4 shadow-xl flex items-center gap-3 font-mono text-sm text-sage-deep" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-        <span class="font-display text-2xl font-semibold text-mauve">27</span>years treating rheumatic &amp; autoimmune disease
+    
+    <!-- Right Image Section with Floating Card & Continuous Up/Down Motion -->
+    <div class="relative animate-float-slow" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+      
+      <!-- Ambient Glow Behind Image -->
+      <div class="absolute inset-0 bg-gradient-to-tr from-mauve/20 to-sage-deep/20 rounded-[36px] blur-2xl transform scale-95 -z-10"></div>
+
+      <!-- Main Image Container -->
+      <div class="relative rounded-[32px] overflow-hidden shadow-2xl border border-white/60 bg-white/40 backdrop-blur-sm p-2 group">
+        <div class="rounded-[26px] overflow-hidden relative aspect-[4/5]">
+          <img class="object-cover object-top w-full h-full group-hover:scale-105 transition-transform duration-1000 ease-out"
+               src="https://drshailajasabnis.in/media/shop-148/dr-shailaja-sabnis/dr-shailaja-sabnis-980039.jpg" 
+               alt="Dr Shailaja Sabnis, Consultant Rheumatologist">
+          <div class="absolute inset-0 bg-gradient-to-t from-sage-deep/20 via-transparent to-transparent opacity-60"></div>
+        </div>
       </div>
+      
+      <!-- Floating Experience Glass Badge -->
+      <div class="absolute -bottom-6 -left-6 bg-white/85 backdrop-blur-md border border-white/80 rounded-2xl p-5 shadow-2xl flex items-center gap-4 hover:-translate-y-1 transition-transform duration-300" 
+           data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sage-deep to-sage-deep/90 text-ivory flex items-center justify-center font-display text-2xl font-bold shadow-md shadow-sage-deep/30">
+          27
+        </div>
+        <div>
+          <div class="text-xs font-bold text-sage-deep uppercase tracking-wider">Years Experience</div>
+          <div class="text-xs text-ink-soft/80 leading-snug mt-0.5">
+            Specialized Care in Rheumatic<br>&amp; Autoimmune Conditions
+          </div>
+        </div>
+      </div>
+      
+      <!-- Decorative Frame Accents -->
+      <div class="absolute -top-4 -right-4 w-12 h-12 border-t-2 border-r-2 border-mauve/40 rounded-tr-2xl pointer-events-none"></div>
+      <div class="absolute -bottom-4 -left-4 w-12 h-12 border-b-2 border-l-2 border-mauve/40 rounded-bl-2xl pointer-events-none"></div>
     </div>
+    
   </div>
 </section>
 
-<!-- STATS -->
-<section class="py-16 px-6 md:px-8">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Component Specific Animations -->
+<style>
+  /* Continuous Up/Down Floating Animation for Image Container */
+  .animate-float-slow {
+    animation: floatUpDown 6s infinite ease-in-out;
+  }
+
+  @keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-16px);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.05); }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 8s infinite ease-in-out;
+  }
+</style>
+
+<!-- STATS SECTION - Minimalist Executive Bar (Ivory Theme) -->
+<section class="py-10 sm:py-12 px-4 sm:px-6 md:px-8 bg-ivory border-y border-[#1e3a2f]/10 relative overflow-hidden" id="stats-section">
+  <div class="max-w-6xl mx-auto">
     
-    <div class="bg-[#1e3a2f] rounded-3xl p-8 flex flex-col items-center justify-center text-center min-h-[200px] transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg relative overflow-hidden group">
-      <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <span class="font-display text-6xl md:text-7xl font-semibold text-ivory mb-2 flex items-baseline gap-1" id="stat1">
-        0<span class="text-4xl md:text-5xl font-light text-white/60">+</span>
-      </span>
-      <span class="font-mono text-xs uppercase tracking-[0.2em] text-white/80 font-medium relative">
-        <span class="block w-8 h-0.5 bg-white/20 mx-auto mb-3 group-hover:w-12 group-hover:bg-white/40 transition-all duration-300"></span>
-        Years in Practice
-      </span>
-    </div>
+    <!-- Mobile: 2x2 Grid with Clean Spacing | Desktop: 4 Columns with Subtle Dividers -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-8 lg:gap-4 divide-y-0 lg:divide-x divide-[#1e3a2f]/15">
+      
+      <!-- STAT 1: Experience -->
+      <div class="flex flex-col items-center text-center px-2">
+        <div class="flex items-baseline justify-center min-h-[44px] sm:min-h-[52px]">
+          <span class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1e3a2f] tracking-tight" id="stat1">
+            0
+          </span>
+        </div>
+        <div class="h-0.5 w-6 bg-[#1e3a2f]/30 my-2 rounded-full"></div>
+        <span class="text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#1e3a2f]/70 font-semibold max-w-[140px] leading-snug">
+          Years in Practice
+        </span>
+      </div>
 
-    <div class="bg-[#1e3a2f] rounded-3xl p-8 flex flex-col items-center justify-center text-center min-h-[200px] transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg relative overflow-hidden group">
-      <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <span class="font-display text-6xl md:text-7xl font-semibold text-ivory mb-2" id="stat2">0</span>
-      <span class="font-mono text-xs uppercase tracking-[0.2em] text-white/80 font-medium relative">
-        <span class="block w-8 h-0.5 bg-white/20 mx-auto mb-3 group-hover:w-12 group-hover:bg-white/40 transition-all duration-300"></span>
-        Hospitals &amp; Clinics
-      </span>
-    </div>
+      <!-- STAT 2: Hospitals -->
+      <div class="flex flex-col items-center text-center px-2">
+        <div class="flex items-baseline justify-center min-h-[44px] sm:min-h-[52px]">
+          <span class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1e3a2f] tracking-tight" id="stat2">
+            0
+          </span>
+        </div>
+        <div class="h-0.5 w-6 bg-[#1e3a2f]/30 my-2 rounded-full"></div>
+        <span class="text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#1e3a2f]/70 font-semibold max-w-[140px] leading-snug">
+          Hospitals &amp; Clinics
+        </span>
+      </div>
 
-    <div class="bg-[#1e3a2f] rounded-3xl p-8 flex flex-col items-center justify-center text-center min-h-[200px] transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg relative overflow-hidden group">
-      <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <span class="font-display text-6xl md:text-7xl font-semibold text-ivory mb-2 flex items-baseline gap-1" id="stat3">
-        0<span class="text-4xl md:text-5xl font-light text-white/60">+</span>
-      </span>
-      <span class="font-mono text-xs uppercase tracking-[0.2em] text-white/80 font-medium relative">
-        <span class="block w-8 h-0.5 bg-white/20 mx-auto mb-3 group-hover:w-12 group-hover:bg-white/40 transition-all duration-300"></span>
-        Talks &amp; Conferences
-      </span>
-    </div>
+      <!-- STAT 3: Academic/Talks -->
+      <div class="flex flex-col items-center text-center px-2">
+        <div class="flex items-baseline justify-center min-h-[44px] sm:min-h-[52px]">
+          <span class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1e3a2f] tracking-tight" id="stat3">
+            0
+          </span>
+        </div>
+        <div class="h-0.5 w-6 bg-[#1e3a2f]/30 my-2 rounded-full"></div>
+        <span class="text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#1e3a2f]/70 font-semibold max-w-[140px] leading-snug">
+          Talks &amp; Conferences
+        </span>
+      </div>
 
-    <div class="bg-[#1e3a2f] rounded-3xl p-8 flex flex-col items-center justify-center text-center min-h-[200px] transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg relative overflow-hidden group">
-      <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-      <span class="font-display text-6xl md:text-7xl font-semibold text-ivory mb-2" id="stat4">0</span>
-      <span class="font-mono text-xs uppercase tracking-[0.2em] text-white/80 font-medium relative">
-        <span class="block w-8 h-0.5 bg-white/20 mx-auto mb-3 group-hover:w-12 group-hover:bg-white/40 transition-all duration-300"></span>
-        Private Practice Since
-      </span>
-    </div>
+      <!-- STAT 4: Established Practice -->
+      <div class="flex flex-col items-center text-center px-2">
+        <div class="flex items-baseline justify-center min-h-[44px] sm:min-h-[52px]">
+          <span class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1e3a2f] tracking-tight" id="stat4">
+            0
+          </span>
+        </div>
+        <div class="h-0.5 w-6 bg-[#1e3a2f]/30 my-2 rounded-full"></div>
+        <span class="text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#1e3a2f]/70 font-semibold max-w-[140px] leading-snug">
+          Private Practice Since
+        </span>
+      </div>
 
+    </div>
   </div>
 </section>
 
@@ -411,122 +540,297 @@
     ];
 
     const DURATION = 2000;
-    const animations = new Map();
+    const activeAnimations = new Map();
+    let hasAnimated = false;
 
-    function startAnimation(elementId, target, suffix, delay = 0) {
-      const el = document.getElementById(elementId);
+    function resetStats() {
+      statElements.forEach((item) => {
+        const el = document.getElementById(item.id);
+        if (el) el.textContent = '0';
+      });
+    }
+
+    function animateSingleStat(item, delay = 0) {
+      const el = document.getElementById(item.id);
       if (!el) return;
-      if (animations.get(el)?.running) return;
 
-      const state = {
-        running: true,
-        target: target,
-        suffix: suffix,
-        startTime: performance.now() + delay,
-        el: el,
-      };
+      // Cancel any ongoing frame for this element
+      if (activeAnimations.has(item.id)) {
+        cancelAnimationFrame(activeAnimations.get(item.id));
+      }
 
-      animations.set(el, state);
+      let startTime = null;
 
-      function updateCounter(now) {
-        const state = animations.get(el);
-        if (!state || !state.running) return;
+      function updateCounter(timestamp) {
+        if (!startTime) startTime = timestamp + delay;
+        const elapsed = timestamp - startTime;
 
-        const elapsed = now - state.startTime;
-        let progress = Math.min(elapsed / DURATION, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        const currentValue = Math.round(eased * state.target);
+        if (elapsed < 0) {
+          activeAnimations.set(item.id, requestAnimationFrame(updateCounter));
+          return;
+        }
 
-        if (state.suffix) {
-          el.innerHTML = currentValue + `<span class="text-4xl md:text-5xl font-light text-white/60">${state.suffix}</span>`;
+        const progress = Math.min(elapsed / DURATION, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // Ease Out Cubic
+        const currentValue = Math.round(eased * item.target);
+
+        if (item.suffix) {
+          el.innerHTML = currentValue + `<span class="text-xl sm:text-2xl font-light text-[#1e3a2f]/70 ml-0.5">${item.suffix}</span>`;
         } else {
           el.textContent = currentValue;
         }
 
-        if (progress >= 1) {
-          if (state.suffix) {
-            el.innerHTML = state.target + `<span class="text-4xl md:text-5xl font-light text-white/60">${state.suffix}</span>`;
-          } else {
-            el.textContent = state.target;
-          }
-          state.running = false;
-          animations.set(el, state);
-          return;
+        if (progress < 1) {
+          activeAnimations.set(item.id, requestAnimationFrame(updateCounter));
+        } else {
+          activeAnimations.delete(item.id);
         }
-
-        requestAnimationFrame(updateCounter);
       }
 
-      requestAnimationFrame((now) => {
-        state.startTime = now + delay;
-        animations.set(el, state);
-        requestAnimationFrame(updateCounter);
+      activeAnimations.set(item.id, requestAnimationFrame(updateCounter));
+    }
+
+    function triggerAllAnimations() {
+      statElements.forEach((item, index) => {
+        animateSingleStat(item, index * 100);
       });
     }
 
-    statElements.forEach((item, index) => {
-      setTimeout(() => {
-        startAnimation(item.id, item.target, item.suffix, 0);
-      }, 40 + index * 100);
-    });
+    // IntersectionObserver to detect when section comes into viewport (works seamlessly on mobile scroll)
+    const section = document.getElementById('stats-section');
+    if (section && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            triggerAllAnimations();
+          } else {
+            resetStats(); // Reset to 0 when user scrolls out so it re-animates on return
+          }
+        });
+      }, {
+        threshold: 0.25 // Triggers when 25% of the section is visible
+      });
+
+      observer.observe(section);
+    } else {
+      // Fallback for older browsers
+      triggerAllAnimations();
+    }
 
   })();
 </script>
 
-<!-- ABOUT -->
-<section class="relative py-28 px-6 md:px-8 bg-sage-deep/5 overflow-hidden" id="about">
-  <div class="absolute -top-24 -left-24 w-96 h-96 bg-sage/15 rounded-full blur-3xl pointer-events-none"></div>
-  <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-mauve/15 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Custom Animation Keyframes & Gradient Utilities -->
+<style>
+  @keyframes floatSlow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(1deg); }
+  }
 
-  <div class="relative max-w-6xl mx-auto grid md:grid-cols-[1fr_0.9fr] gap-12 lg:gap-16 items-center">
+  @keyframes pulseRing {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.03); opacity: 0.9; }
+  }
+
+  @keyframes imagePan {
+    0%, 100% { transform: scale(1.03) translateY(0px); }
+    50% { transform: scale(1.08) translateY(-4px); }
+  }
+
+  /* Custom Organic Frame Shapes */
+  .squircle-frame {
+    border-radius: 42% 58% 65% 35% / 45% 42% 58% 55%;
+  }
+  .squircle-ring-1 {
+    border-radius: 48% 52% 58% 42% / 40% 60% 40% 60%;
+  }
+  .squircle-ring-2 {
+    border-radius: 60% 40% 45% 55% / 52% 48% 52% 48%;
+  }
+
+  .animate-float-slow {
+    animation: floatSlow 7s ease-in-out infinite;
+  }
+  .animate-pulse-ring {
+    animation: pulseRing 5s ease-in-out infinite;
+  }
+  .animate-image-pan {
+    animation: imagePan 12s ease-in-out infinite;
+  }
+</style>
+
+<!-- ABOUT SECTION - Premium Mesh Gradient & Enlarged Organic Framing with AOS -->
+<section class="relative py-16 lg:py-24 px-4 sm:px-6 md:px-8 bg-gradient-to-b from-[#faf8f5] via-[#f4eee6] to-[#faf8f5] overflow-hidden" id="about">
+  
+  <!-- Subtle Architectural Mesh Gradient Overlays -->
+  <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-radial from-[#c5a880]/12 via-[#1e3a2f]/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-20 -right-20 w-[600px] h-[600px] bg-radial from-[#1e3a2f]/8 via-[#c5a880]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+  
+  <!-- Fine Line Architectural Texture Accent -->
+  <div class="absolute inset-0 bg-[radial-gradient(#1e3a2f_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.03] pointer-events-none"></div>
+
+  <div class="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
     
-    <div class="space-y-6" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-sage-deep/10 border border-sage-deep/15 backdrop-blur-md font-mono text-xs uppercase tracking-widest text-sage-deep font-medium">
-        <span class="w-1.5 h-1.5 rounded-full bg-sage-deep animate-pulse"></span>
-        About
-      </div>
+    <!-- LEFT COLUMN: Enlarged Multi-Border Organic Image Framing (5 Columns) -->
+    <div class="lg:col-span-5 flex justify-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
       
-      <h2 class="font-display text-sage-deep text-4xl lg:text-5xl tracking-tight leading-[1.15]">
-        A physician's eye,<br>
-        <span class="italic font-normal text-mauve">a specialist's depth.</span>
-      </h2>
+      <!-- Scaled Container (w-80 -> lg:w-[440px] for a larger, balanced presentation) -->
+      <div class="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[440px] lg:h-[440px] flex items-center justify-center my-2 sm:my-4">
+        
+        <!-- FRAME 1: Outer Gold Accent Ring (Pulsing) -->
+        <div class="absolute inset-[-14px] squircle-ring-1 border-2 border-[#c5a880]/50 animate-pulse-ring pointer-events-none"></div>
+        
+        <!-- FRAME 2: Middle Deep Emerald Offset Ring (Rotating/Floating) -->
+        <div class="absolute inset-[-7px] squircle-ring-2 border border-[#1e3a2f]/25 bg-[#1e3a2f]/5 animate-float-slow pointer-events-none" style="animation-delay: -2s;"></div>
+        
+        <!-- FRAME 3: Inner Frosted Glow Halo -->
+        <div class="absolute inset-0 squircle-frame bg-gradient-to-tr from-[#1e3a2f]/15 via-[#c5a880]/20 to-transparent blur-md pointer-events-none"></div>
 
-      <div class="space-y-4 text-ink-soft text-base leading-relaxed font-light">
-        <p>
-          Dr. Shailaja Sabnis began her career with an M.B.B.S. from Seth G.S. Medical College &amp; K.E.M. Hospital, followed by an M.D. in Medicine and a three-year residency spanning I.C.U., Cardiology, Endocrinology, Nephrology, and Rheumatology. In 2022, after two decades in practice, she completed a Diploma in Rheumatology from South Wales University, U.K. — sharpening a specialism she had already been practising in Mumbai since 1999.
-        </p>
-        <p>
-          That dual grounding — broad internal medicine paired with focused rheumatology — shapes her practice: every joint or skin complaint is evaluated against the complete physiological picture. She currently consults at Lilavati Hospital, Nanavati Max Super Speciality Hospital, Bhartiya Arogya Nidhi Hospital, and Holy Spirit Hospital, alongside her long-running private practice in Andheri East.
-        </p>
+        <!-- MAIN CONTAINER: Organic Shaped Image Frame -->
+        <div class="relative w-full h-full squircle-frame overflow-hidden bg-white shadow-2xl border-2 border-white/90 group z-10 animate-float-slow">
+          
+          <!-- Moving Image with Slow Pan & Zoom -->
+          <img 
+            src="https://ik.imagekit.io/iuiy6mihw/Dr-Shaileja-Sabnis.png" 
+            alt="Dr. Shailaja Sabnis - Senior Consultant Rheumatologist" 
+            class="w-full h-full object-cover object-top filter brightness-[1.02] contrast-[1.02] animate-image-pan"
+            loading="lazy"
+          />
+          
+          <!-- Subtle Vignette Gradient -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#1e3a2f]/80 via-transparent to-transparent"></div>
+
+          <!-- Integrated Bottom Caption inside the frame -->
+          <div class="absolute bottom-5 inset-x-0 text-center text-white z-20 px-4">
+            <span class="block font-serif text-lg sm:text-xl font-normal tracking-wide drop-shadow">Dr. Shailaja Sabnis</span>
+            <span class="block font-mono text-[9.5px] uppercase tracking-widest text-[#c5a880] font-semibold mt-0.5">M.D. | Dip. Rheum (U.K.)</span>
+          </div>
+
+        </div>
+
+        <!-- Floating Experience Badge with AOS scale effect -->
+        <div 
+          class="absolute -bottom-2 -right-2 bg-white/95 backdrop-blur-xl py-2 px-4 rounded-2xl border border-[#1e3a2f]/15 shadow-xl z-20 flex items-center space-x-2.5"
+          data-aos="zoom-in" 
+          data-aos-delay="400" 
+          data-aos-duration="600"
+          data-aos-once="true"
+        >
+          <div class="w-8 h-8 rounded-xl bg-[#1e3a2f] text-white flex items-center justify-center shrink-0 shadow-inner">
+            <svg class="w-4 h-4 text-[#c5a880]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <span class="block font-serif text-sm font-bold text-[#1e3a2f] leading-none">25+ Yrs</span>
+            <span class="text-[9px] font-mono uppercase tracking-wider text-slate-500 font-medium">Experience</span>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="relative group" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
-      <div class="absolute -inset-0.5 bg-gradient-to-r from-sage/30 to-mauve/30 rounded-3xl blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
+    <!-- RIGHT COLUMN: Professional Biography & Profile Details (7 Columns) -->
+    <div class="lg:col-span-7 space-y-6" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+      
+      <!-- Category Tag -->
+      <div 
+        class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/80 border border-[#1e3a2f]/15 shadow-sm backdrop-blur-md font-mono text-[11px] uppercase tracking-widest text-[#1e3a2f] font-semibold"
+        data-aos="fade-up" 
+        data-aos-delay="100" 
+        data-aos-once="true"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-[#1e3a2f] animate-pulse"></span>
+        About The Physician
+      </div>
 
-      <div class="relative bg-parchment/90 backdrop-blur-xl rounded-3xl p-8 lg:p-10 border border-white/80 shadow-2xl space-y-6">
-        <span class="block font-display text-6xl text-mauve/40 leading-none -mb-4">"</span>
-        
-        <p class="font-display italic text-xl lg:text-2xl text-sage-deep leading-relaxed">
-          Rheumatic disease rarely announces itself all at once. My work is to listen for it early, treat it precisely, and stay with the patient for the long course of managing it.
+      <!-- Main Headline -->
+      <h2 
+        class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1e3a2f] tracking-tight leading-[1.18]"
+        data-aos="fade-up" 
+        data-aos-delay="200" 
+        data-aos-once="true"
+      >
+        Comprehensive expertise in<br>
+        <span class="italic font-normal text-[#1e3a2f]/70">autoimmune &amp; joint disorders.</span>
+      </h2>
+
+      <!-- Bio Paragraphs -->
+      <div 
+        class="space-y-4 text-slate-700 text-base leading-relaxed font-light"
+        data-aos="fade-up" 
+        data-aos-delay="300" 
+        data-aos-once="true"
+      >
+        <p>
+          <strong class="font-medium text-[#1e3a2f]">Dr. Shailaja Sabnis</strong> is a senior Consultant Physician and Rheumatologist with over two decades of clinical experience in Mumbai. She completed her M.D. in General Medicine in Mumbai following an extensive 3-year residency at L.T.M.G. Hospital (Sion), gaining multi-disciplinary expertise across ICU care, Rheumatology, Cardiology, Nephrology, and Endocrinology.
         </p>
+        <p>
+          To complement her extensive internal medicine background with international sub-specialty training, she earned a <strong class="font-medium text-[#1e3a2f]">Diploma in Rheumatology from South Wales University, U.K.</strong> Her clinical focus includes the advanced management of Rheumatoid Arthritis, Systemic Lupus Erythematosus (SLE), Ankylosing Spondylitis, Osteoporosis, and Gout.
+        </p>
+      </div>
+
+      <!-- Key Academic & Clinical Highlights -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
         
-        <div class="pt-4 border-t border-sage-deep/10 flex items-center justify-between">
+        <div 
+          class="p-3.5 rounded-xl bg-white/70 border border-[#1e3a2f]/10 shadow-sm backdrop-blur-sm flex items-start space-x-3"
+          data-aos="fade-up" 
+          data-aos-delay="400" 
+          data-aos-once="true"
+        >
+          <div class="p-2 rounded-lg bg-[#1e3a2f]/5 text-[#1e3a2f] shrink-0">
+            <svg class="w-4 h-4 text-[#c5a880]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
           <div>
-            <cite class="block font-display font-semibold not-italic text-sm text-sage-deep">Dr. Shailaja Sabnis</cite>
-            <span class="font-mono text-[11px] uppercase tracking-wider text-ink-soft">Consulting Rheumatologist</span>
+            <h3 class="font-serif text-xs font-semibold text-[#1e3a2f]">Hospital Panels</h3>
+            <p class="text-[11px] text-slate-600 leading-tight mt-0.5">Honorary Consultant at Holy Spirit Hospital since 2002; consultant panelist at Nanavati Max, Lilavati, &amp; Bhartiya Arogya Nidhi.</p>
           </div>
         </div>
+
+        <div 
+          class="p-3.5 rounded-xl bg-white/70 border border-[#1e3a2f]/10 shadow-sm backdrop-blur-sm flex items-start space-x-3"
+          data-aos="fade-up" 
+          data-aos-delay="500" 
+          data-aos-once="true"
+        >
+          <div class="p-2 rounded-lg bg-[#1e3a2f]/5 text-[#1e3a2f] shrink-0">
+            <svg class="w-4 h-4 text-[#c5a880]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-serif text-xs font-semibold text-[#1e3a2f]">Academic Leadership</h3>
+            <p class="text-[11px] text-slate-600 leading-tight mt-0.5">D.N.B. postgraduate mentor, CPS medical speaker, and former undergraduate medical teacher at Sion Hospital.</p>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Quote Accent -->
+      <div 
+        class="relative bg-white/85 backdrop-blur-md rounded-xl p-4 sm:p-5 border-l-4 border-l-[#1e3a2f] border-y border-r border-[#1e3a2f]/10 shadow-sm"
+        data-aos="fade-up" 
+        data-aos-delay="600" 
+        data-aos-once="true"
+      >
+        <p class="font-serif italic text-sm text-[#1e3a2f] leading-relaxed">
+          “Early diagnosis in rheumatology prevents irreversible joint damage and preserves long-term mobility. Rheumatic conditions require precise evaluation of the entire system.”
+        </p>
+      </div>
+
     </div>
 
   </div>
 </section>
 
-<!-- EXPERTISE - Premium Section with Icons & AOS -->
+<!-- EXPERTISE - Premium Section with Centered Icons, Hover Scale & AOS -->
 <section class="py-24 relative overflow-hidden" id="expertise" style="background: #f8f6f1;">
   
-  <!-- Animated Background Elements -->
+  <!-- Animated Background Elements (Preserved Original Floating Bubbles) -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden">
     <div class="absolute rounded-full opacity-[0.06] bg-gradient-radial from-[#1e3a2f] to-[#b7ccb5] w-[120px] h-[120px] top-[5%] left-[2%] animate-float-1"></div>
     <div class="absolute rounded-full opacity-[0.06] bg-gradient-radial from-[#1e3a2f] to-[#b7ccb5] w-[80px] h-[80px] bottom-[10%] right-[5%] animate-float-2"></div>
@@ -536,8 +840,8 @@
 
   <div class="max-w-6xl mx-auto px-6 md:px-8 relative z-10">
     
-    <!-- Header -->
-    <div class="max-w-xl mb-14" data-aos="fade-up" data-aos-duration="600">
+    <!-- Section Header -->
+    <div class="max-w-xl mb-14" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
       <div class="flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.2em] text-[#1e3a2f] font-medium">
         <span class="w-8 h-px bg-[#1e3a2f]/30"></span>
         Areas of Expertise
@@ -551,210 +855,297 @@
     </div>
 
     <!-- Expertise Grid -->
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      <!-- Card 1 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+      <!-- Card 1: Rheumatoid Arthritis -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="0"
+        data-aos-once="true"
+      >
+        <!-- Top Lightbar Effect on Hover -->
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <!-- Centered Icon Box with Scale & Shadow Effects -->
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 11.5a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM12 4.5v2.25m0 9.75v2.25M4.5 12H6.75m9.75 0H18.75"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">01</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Rheumatoid Arthritis</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Early diagnosis and personalised, treat-to-target management.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Rheumatoid Arthritis</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Early diagnosis and personalized, treat-to-target disease modifying strategies.</p>
       </div>
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="60">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+      <!-- Card 2: SLE (Lupus) -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="60"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:-rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5a3.75 3.75 0 01-3.75 3.75H8.75A3.75 3.75 0 015 14.5m14 0V19.5a2.25 2.25 0 01-2.25 2.25H7.25A2.25 2.25 0 015 19.5V14.5"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">02</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">SLE (Lupus)</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Comprehensive care for systemic lupus erythematosus, including flare management.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">SLE (Lupus)</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Comprehensive care for systemic lupus erythematosus, including flare management.</p>
       </div>
 
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="120">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/>
+      <!-- Card 3: Ankylosing Spondylitis -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="120"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m-4-14h8m-8 5h8m-8 5h8"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">03</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Ankylosing Spondylitis</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Targeted therapy for spinal inflammation, stiffness and seronegative spondyloarthropathy.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Ankylosing Spondylitis</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Targeted therapy for spinal inflammation, stiffness and seronegative spondyloarthropathy.</p>
       </div>
 
-      <!-- Card 4 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="180">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+      <!-- Card 4: Osteoarthritis -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="180"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:-rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">04</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Osteoarthritis</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Medical management of joint wear, pain and mobility loss.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Osteoarthritis</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Medical management of joint wear, pain and mobility loss.</p>
       </div>
 
-      <!-- Card 5 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="240">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+      <!-- Card 5: Osteoporosis & Bone Health -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="240"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751A11.959 11.959 0 0112 2.714z"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">05</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Osteoporosis &amp; Bone Health</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Screening and treatment of metabolic bone and joint disease.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Osteoporosis &amp; Bone Health</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Screening and treatment of metabolic bone and joint disease.</p>
       </div>
 
-      <!-- Card 6 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      <!-- Card 6: Gout & Hyperuricemia -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="300"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:-rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">06</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Gout &amp; Hyperuricemia</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Acute care and long-term uric acid management.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Gout &amp; Hyperuricemia</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Acute care and long-term uric acid management.</p>
       </div>
 
-      <!-- Card 7 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="360">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+      <!-- Card 7: Psoriatic Arthritis -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="360"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">07</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Psoriatic Arthritis</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Joint and skin co-management, often alongside dermatology.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Psoriatic Arthritis</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Joint and skin co-management, often alongside dermatology.</p>
       </div>
 
-      <!-- Card 8 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="420">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+      <!-- Card 8: Vasculitis & APLA -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="420"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:-rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">08</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Vasculitis &amp; APLA</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Care for vasculitis, antiphospholipid antibody syndrome and clotting disorders.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Vasculitis &amp; APLA</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Care for vasculitis, antiphospholipid antibody syndrome and clotting disorders.</p>
       </div>
 
-      <!-- Card 9 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="480">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+      <!-- Card 9: Pregnancy & Rheumatic Disease -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="480"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">09</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Pregnancy &amp; Rheumatic Disease</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Pre-conception counselling and safety planning for women on rheumatology treatment.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Pregnancy &amp; Rheumatic Disease</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Pre-conception counselling and safety planning for women on rheumatology treatment.</p>
       </div>
 
-      <!-- Card 10 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="540">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v4m0 0v4m0-4h4m-4 0H8m4 0v4m0 0a2 2 0 11-4 0 2 2 0 014 0z"/>
+      <!-- Card 10: Recurrent Pregnancy Loss -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="540"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:-rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">10</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Recurrent Pregnancy Loss</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Autoimmune work-up for recurrent miscarriage.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Recurrent Pregnancy Loss</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Autoimmune work-up for recurrent miscarriage.</p>
       </div>
 
-      <!-- Card 11 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+      <!-- Card 11: Thyroid Disorders -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="600"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">11</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">Thyroid Disorders</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Diagnosis and regulation of thyroid imbalance.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">Thyroid Disorders</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Diagnosis and regulation of thyroid imbalance.</p>
       </div>
 
-      <!-- Card 12 -->
-      <div class="bg-white rounded-2xl p-6 md:p-7 transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-xl border border-[#1e3a2f]/[0.06] shadow-sm group cursor-default relative overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-delay="660">
-        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a2f]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
-        <div class="flex items-start gap-4 relative z-10">
-          <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f5f0e8] group-hover:scale-105 group-hover:-rotate-2 transition-all duration-300">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+      <!-- Card 12: General Internal Medicine -->
+      <div 
+        class="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-7 text-center border border-[#1e3a2f]/[0.08] shadow-[0_4px_20px_-4px_rgba(30,58,47,0.05)] transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:bg-white overflow-hidden flex flex-col items-center cursor-pointer" 
+        data-aos="fade-up" 
+        data-aos-duration="500" 
+        data-aos-delay="660"
+        data-aos-once="true"
+      >
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#1e3a2f] via-[#b7ccb5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1e3a2f]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+
+        <div class="relative mb-6 z-10">
+          <div class="absolute inset-0 rounded-2xl bg-[#1e3a2f]/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-125"></div>
+          <div class="w-16 h-16 rounded-2xl bg-[#1e3a2f]/[0.06] flex items-center justify-center text-[#1e3a2f] group-hover:bg-[#1e3a2f] group-hover:text-[#f8f6f1] group-hover:scale-110 group-hover:-rotate-1 transition-all duration-300 shadow-sm relative z-10">
+            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-105" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6h1.5m-1.5 3h1.5m-1.5 3h1.5"/>
             </svg>
           </div>
-          <div>
-            <span class="font-mono text-[10px] text-[#b7ccb5] tracking-[0.15em] font-semibold">12</span>
-            <h4 class="font-display text-[#1e3a2f] text-lg mt-1 mb-1.5">General Internal Medicine</h4>
-            <p class="text-[#4a5b4a] text-sm leading-relaxed">Diabetes, hypertension, fever and infection management.</p>
-          </div>
         </div>
+
+        <h3 class="font-display text-[#1e3a2f] text-xl font-medium mb-2.5 relative z-10 transition-colors duration-300 group-hover:text-[#1e3a2f]">General Internal Medicine</h3>
+        <p class="text-[#4a5b4a] text-sm leading-relaxed relative z-10 font-normal">Diabetes, hypertension, fever and infection management.</p>
       </div>
 
     </div>
