@@ -94,82 +94,201 @@
 
 <!-- NAV -->
 <header id="main-header" class="sticky top-0 z-50 bg-ivory/90 backdrop-blur-md border-b border-line transition-all duration-300">
-  <nav class="max-w-6xl mx-auto px-6 md:px-8 py-5 md:py-6 flex items-center justify-between transition-all duration-300">
-    <a href="#" class="font-display text-lg md:text-xl font-medium text-sage-deep tracking-tight">
-      Dr. Shailaja Sabnis <span class="italic text-mauve font-normal">MD</span>
+
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-1.5 flex items-center justify-between transition-all duration-300">
+
+    <!-- LOGO -->
+    <a href="#" class="inline-flex flex-shrink-0 items-center leading-none">
+      <img 
+        src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png" 
+        alt="Dr. Shailaja Sabnis MD"
+        class="h-16 sm:h-18 md:h-20 lg:h-22 w-auto max-w-[300px] object-contain block"
+      />
     </a>
 
-    <div class="hidden md:flex items-center gap-10 text-base font-semibold text-ink-soft">
-      <a class="nav-link hover:text-sage-deep transition-colors duration-200" href="#home">Home</a>
-      <a class="nav-link hover:text-sage-deep transition-colors duration-200" href="#about">About</a>
-      <a class="nav-link hover:text-sage-deep transition-colors duration-200" href="#expertise">Expertise</a>
-      <a class="nav-link hover:text-sage-deep transition-colors duration-200" href="#contact">Contact</a>
+    <!-- DESKTOP NAVIGATION -->
+    <div class="hidden md:flex items-center gap-8 lg:gap-10 text-base font-semibold text-ink-soft">
+
+      <a 
+        class="nav-link hover:text-sage-deep transition-colors duration-200" 
+        href="#home"
+      >
+        Home
+      </a>
+
+      <a 
+        class="nav-link hover:text-sage-deep transition-colors duration-200" 
+        href="#about"
+      >
+        About
+      </a>
+
+      <a 
+        class="nav-link hover:text-sage-deep transition-colors duration-200" 
+        href="#expertise"
+      >
+        Expertise
+      </a>
+
+      <a 
+        class="nav-link hover:text-sage-deep transition-colors duration-200" 
+        href="#contact"
+      >
+        Contact
+      </a>
+
     </div>
 
-    <div class="hidden md:block">
-      <a class="inline-flex items-center justify-center bg-sage-deep hover:bg-sage transition-all duration-300 text-ivory text-base font-semibold px-7 py-3 rounded-full shadow-sm hover:shadow-md" href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">
+    <!-- DESKTOP CTA -->
+    <div class="hidden md:block flex-shrink-0">
+
+      <a 
+        class="inline-flex items-center justify-center bg-sage-deep hover:bg-sage transition-all duration-300 text-ivory text-base font-semibold px-7 py-3 rounded-full shadow-sm hover:shadow-md" 
+        href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" 
+        target="_blank" 
+        rel="noopener"
+      >
         Book a Consultation
       </a>
+
     </div>
 
-    <button id="mobile-menu-btn" type="button" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg text-sage-deep hover:bg-sage-deep/5 transition-colors focus:outline-none z-50" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span class="w-5 h-0.5 bg-sage-deep rounded-full transition-all duration-300"></span>
-      <span class="w-5 h-0.5 bg-sage-deep rounded-full my-1 transition-all duration-300"></span>
-      <span class="w-5 h-0.5 bg-sage-deep rounded-full transition-all duration-300"></span>
+    <!-- MOBILE MENU BUTTON -->
+    <button 
+      id="mobile-menu-btn" 
+      type="button" 
+      class="md:hidden flex flex-col justify-center items-center w-11 h-11 rounded-lg text-sage-deep hover:bg-sage-deep/5 transition-colors focus:outline-none z-50" 
+      aria-label="Toggle navigation menu" 
+      aria-expanded="false"
+    >
+
+      <span class="w-6 h-0.5 bg-sage-deep rounded-full transition-all duration-300"></span>
+
+      <span class="w-6 h-0.5 bg-sage-deep rounded-full my-1.5 transition-all duration-300"></span>
+
+      <span class="w-6 h-0.5 bg-sage-deep rounded-full transition-all duration-300"></span>
+
     </button>
+
   </nav>
 
-  <div id="mobile-menu" class="hidden md:hidden bg-ivory/95 backdrop-blur-xl border-b border-line px-6 py-6 transition-all duration-300 opacity-0 -translate-y-2">
-    <div class="flex flex-col gap-5 text-lg font-semibold text-ink-soft">
-      <a class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" href="#home">Home</a>
-      <a class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" href="#about">About</a>
-      <a class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" href="#expertise">Expertise</a>
-      <a class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" href="#contact">Contact</a>
-      
-      <div class="pt-4 border-t border-line/60 mt-2">
-        <a class="mobile-nav-link block w-full text-center bg-sage-deep hover:bg-sage transition-all duration-300 text-ivory text-base font-semibold px-6 py-3.5 rounded-full shadow-sm" href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">
+
+  <!-- MOBILE MENU -->
+  <div 
+    id="mobile-menu" 
+    class="hidden md:hidden bg-ivory/95 backdrop-blur-xl border-b border-line px-6 py-5 transition-all duration-300 opacity-0 -translate-y-2"
+  >
+
+    <div class="flex flex-col gap-4 text-lg font-semibold text-ink-soft">
+
+      <a 
+        class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" 
+        href="#home"
+      >
+        Home
+      </a>
+
+      <a 
+        class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" 
+        href="#about"
+      >
+        About
+      </a>
+
+      <a 
+        class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" 
+        href="#expertise"
+      >
+        Expertise
+      </a>
+
+      <a 
+        class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5" 
+        href="#contact"
+      >
+        Contact
+      </a>
+
+      <div class="pt-3 border-t border-line/60 mt-1">
+
+        <a 
+          class="mobile-nav-link block w-full text-center bg-sage-deep hover:bg-sage transition-all duration-300 text-ivory text-base font-semibold px-6 py-3 rounded-full shadow-sm" 
+          href="https://wa.me/919821234075?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" 
+          target="_blank" 
+          rel="noopener"
+        >
           Book a Consultation
         </a>
+
       </div>
+
     </div>
+
   </div>
+
 </header>
+
+
+
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-    
+
     let isMenuOpen = false;
     let openScrollPos = 0;
 
     function openMenu() {
       isMenuOpen = true;
       openScrollPos = window.scrollY;
+
       menuBtn.setAttribute('aria-expanded', 'true');
+
       mobileMenu.classList.remove('hidden');
-      
+
       requestAnimationFrame(() => {
-        mobileMenu.classList.remove('opacity-0', '-translate-y-2');
-        mobileMenu.classList.add('opacity-100', 'translate-y-0');
+        mobileMenu.classList.remove(
+          'opacity-0',
+          '-translate-y-2'
+        );
+
+        mobileMenu.classList.add(
+          'opacity-100',
+          'translate-y-0'
+        );
       });
     }
 
     function closeMenu() {
       if (!isMenuOpen) return;
+
       isMenuOpen = false;
+
       menuBtn.setAttribute('aria-expanded', 'false');
-      mobileMenu.classList.remove('opacity-100', 'translate-y-0');
-      mobileMenu.classList.add('opacity-0', '-translate-y-2');
-      
+
+      mobileMenu.classList.remove(
+        'opacity-100',
+        'translate-y-0'
+      );
+
+      mobileMenu.classList.add(
+        'opacity-0',
+        '-translate-y-2'
+      );
+
       setTimeout(() => {
-        mobileMenu.classList.add('hidden');
+        if (!isMenuOpen) {
+          mobileMenu.classList.add('hidden');
+        }
       }, 300);
     }
 
     menuBtn.addEventListener('click', (e) => {
       e.stopPropagation();
+
       if (isMenuOpen) {
         closeMenu();
       } else {
@@ -178,19 +297,25 @@
     });
 
     mobileLinks.forEach(link => {
-      link.addEventListener('click', closeMenu);
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
     });
 
+    /* Close menu when user scrolls */
     window.addEventListener('scroll', () => {
+
       if (!isMenuOpen) return;
-      
+
       const currentScrollY = window.scrollY;
       const scrollDifference = currentScrollY - openScrollPos;
 
       if (scrollDifference > 50) {
         closeMenu();
       }
+
     }, { passive: true });
+
   });
 </script>
 
