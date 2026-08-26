@@ -238,9 +238,11 @@
 
     let isMenuOpen = false;
     let openScrollPos = 0;
+    let isMenuJustOpened = false; // Flag to prevent immediate scroll closure
 
     function openMenu() {
       isMenuOpen = true;
+      isMenuJustOpened = true;
       openScrollPos = window.scrollY;
 
       menuBtn.setAttribute('aria-expanded', 'true');
@@ -258,6 +260,11 @@
           'translate-y-0'
         );
       });
+
+      // Allow scroll detection only after 200ms (prevents layout shift micro-scrolls)
+      setTimeout(() => {
+        isMenuJustOpened = false;
+      }, 200);
     }
 
     function closeMenu() {
@@ -300,15 +307,16 @@
       });
     });
 
-    /* Close menu when user scrolls */
+    /* Close menu when user scrolls intentionally */
     window.addEventListener('scroll', () => {
 
-      if (!isMenuOpen) return;
+      if (!isMenuOpen || isMenuJustOpened) return;
 
       const currentScrollY = window.scrollY;
-      const scrollDifference = currentScrollY - openScrollPos;
+      const scrollDifference = Math.abs(currentScrollY - openScrollPos);
 
-      if (scrollDifference > 50) {
+      // Closes menu if user intentionally scrolls more than 80px in either direction
+      if (scrollDifference > 80) {
         closeMenu();
       }
 
