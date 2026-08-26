@@ -95,14 +95,15 @@
 <!-- NAV -->
 <header id="main-header" class="sticky top-0 z-50 bg-ivory/90 backdrop-blur-md border-b border-line transition-all duration-300">
 
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-0 md:py-2 flex items-center justify-between transition-all duration-300">
+  <!-- NAV CONTAINER: pl-0 removes left padding on mobile -->
+  <nav class="max-w-7xl mx-auto pl-0 pr-4 sm:px-6 md:px-8 py-1 md:py-2 flex items-center justify-between transition-all duration-300">
 
-    <!-- LOGO - ALIGNED TO LEFT ON MOBILE -->
-    <a href="#" class="inline-flex flex-shrink-0 items-center justify-start leading-none overflow-hidden">
+    <!-- LOGO - FULL HEIGHT (h-24) FLUSH AGAINST THE LEFT EDGE ON MOBILE -->
+    <a href="#" class="inline-flex flex-shrink-0 items-center justify-start p-0 m-0">
       <img 
         src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png" 
         alt="Dr. Shailaja Sabnis MD"
-        class="h-24 sm:h-24 md:h-20 lg:h-22 w-auto max-w-[300px] object-contain block transform scale-125 md:scale-100 origin-left -ml-2 md:ml-0"
+        class="h-24 sm:h-24 md:h-20 lg:h-22 w-auto max-w-[calc(100vw-80px)] sm:max-w-[260px] md:max-w-[300px] object-contain block p-0 m-0"
       />
     </a>
 
